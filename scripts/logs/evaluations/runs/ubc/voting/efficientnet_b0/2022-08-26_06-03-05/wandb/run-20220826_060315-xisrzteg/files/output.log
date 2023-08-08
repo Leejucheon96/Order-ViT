@@ -1,0 +1,69 @@
+[[36m2022-08-26 06:03:16,544[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-08-26 06:03:16,551[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-08-26 06:03:16,552[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-08-26 06:03:16,553[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-08-26 06:03:16,553[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-08-26 06:03:16,553[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-08-26 06:03:16,554[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-08-26 06:03:16,556[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-08-26 06:03:16,557[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+[[36m2022-08-26 06:03:16,559[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-08-26 06:03:16,560[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 1 nodes.
+[[36m2022-08-26 06:03:16,560[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-08-26 06:04:03,060[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/efficientnet_b0/2022-08-24_22-37-48/checkpoints/epoch_005.ckpt
+[[36m2022-08-26 06:04:03,966[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-08-26 06:04:03,997[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/efficientnet_b0/2022-08-24_22-37-48/checkpoints/epoch_005.ckpt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m   test/cnt_correct_diff   [39m│[35m           37.0            [39m│
+│[36m       test/cnt_diff       [39m│[35m           76.0            [39m│
+│[36m       test/f1_macro       [39m│[35m    0.6292146444320679     [39m│
+│[36m         test/loss         [39m│[35m     0.567625880241394     [39m│
+│[36m       test/new_acc        [39m│[35m    0.8271844387054443     [39m│
+│[36m      test/origin_acc      [39m│[35m     0.825728178024292     [39m│
+│[36m       test/wqKappa        [39m│[35m     0.781194806098938     [39m│
+└───────────────────────────┴───────────────────────────┘
+[38mTesting[39m [38m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [38m129/129[39m [38m0:01:15 • 0:00:00[39m [38m1.55it/s
+[?25h

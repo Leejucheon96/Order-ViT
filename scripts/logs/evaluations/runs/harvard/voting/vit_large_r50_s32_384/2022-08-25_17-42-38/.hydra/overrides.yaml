@@ -1,0 +1,10 @@
+- datamodule.data_ratio=0.1
+- model=voting.yaml
+- logger.wandb.project=havard
+- trainer.devices=[2]
+- datamodule=havard.yaml
+- logger.wandb.tags=[voting,prob,10%]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/harvard/classifycompare/vit_large_r50_s32_384/2022-08-23_12-21-37/checkpoints/epoch_008.ckpt
+- model.key=prob
+- model.threshold=0.6
+- model.sampling=random

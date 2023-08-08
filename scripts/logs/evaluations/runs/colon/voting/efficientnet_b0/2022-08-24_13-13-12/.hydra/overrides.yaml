@@ -1,0 +1,11 @@
+- datamodule.data_ratio=0.7
+- model.name=efficientnet_b0
+- model=voting.yaml
+- logger.wandb.project=colon_new
+- trainer.devices=[1]
+- datamodule=colon.yaml
+- logger.wandb.tags=[voting,prob,70%]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/efficientnet_b0/2022-08-24_05-28-26/checkpoints/epoch_017.ckpt
+- model.key=prob
+- model.threshold=0.5
+- model.sampling=random

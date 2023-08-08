@@ -1,0 +1,11 @@
+- model.name=efficientnet_b0
+- datamodule.data_ratio=0.9
+- model=voting.yaml
+- logger.wandb.project=ubc
+- trainer.devices=[0]
+- datamodule=ubc.yaml
+- logger.wandb.tags=[voting,ent,90%]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/efficientnet_b0/2022-08-24_23-18-41/checkpoints/epoch_011.ckpt
+- model.key=ent
+- model.threshold=0.75
+- model.sampling=random

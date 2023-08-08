@@ -1,0 +1,97 @@
+original_work_dir: ${hydra:runtime.cwd}
+data_dir: ${original_work_dir}/data/
+print_config: true
+ignore_warnings: true
+seed: 42
+name: default
+ckpt_path: /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-06-26_05-42-16/checkpoints/epoch_024.ckpt
+datamodule:
+  _target_: src.datamodules.colon_datamodule.ColonDataModule
+  data_dir: ${data_dir}
+  batch_size: 16
+  num_workers: 0
+  pin_memory: true
+  img_size: 384
+  drop_last: false
+model:
+  _target_: src.models.colon_module.ColonLitModule
+  name: vit_large_r50_s32_384
+  lr: 0.0001
+  weight_decay: 0.0005
+  t_max: 10
+  min_lr: 1.0e-06
+  T_0: 15
+  T_mult: 2
+  eta_min: 1.0e-06
+  pretrained: true
+  scheduler: ReduceLROnPlateau
+  factor: 0.5
+  patience: 6
+  eps: 1.0e-08
+  loss_weight: 0.25
+  threshold: 0.8
+  num_sample: 16
+  key: prob
+  sampling: random
+  decide_by_total_probs: false
+  weighted_sum: false
+  margin: 0.3
+callbacks:
+  model_checkpoint:
+    _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    monitor: val/acc
+    mode: max
+    save_top_k: 1
+    save_last: true
+    verbose: false
+    dirpath: checkpoints/
+    filename: epoch_{epoch:03d}
+    auto_insert_metric_name: false
+  early_stopping:
+    _target_: pytorch_lightning.callbacks.EarlyStopping
+    monitor: val/acc
+    mode: max
+    patience: 10
+    min_delta: 0
+  model_summary:
+    _target_: pytorch_lightning.callbacks.RichModelSummary
+    max_depth: -1
+  rich_progress_bar:
+    _target_: pytorch_lightning.callbacks.RichProgressBar
+    theme:
+      _target_: pytorch_lightning.callbacks.progress.rich_progress.RichProgressBarTheme
+      description: green_yellow
+      progress_bar: green1
+      progress_bar_finished: green1
+      progress_bar_pulse: '#6206E0'
+      batch_progress: green_yellow
+      time: grey82
+      processing_speed: grey82
+      metrics: grey82
+logger:
+  wandb:
+    _target_: pytorch_lightning.loggers.wandb.WandbLogger
+    project: colon
+    name: ${name}
+    save_dir: .
+    offline: false
+    id: null
+    log_model: false
+    prefix: ''
+    job_type: train
+    group: ''
+    tags:
+    - tripletGL
+    - test
+    reinit: true
+trainer:
+  _target_: pytorch_lightning.Trainer
+  min_epochs: 1
+  max_epochs: 100
+  precision: 16
+  strategy: ddp
+  accelerator: gpu
+  devices: 4,5,6,7
+  num_sanity_val_steps: 0
+  resume_from_checkpoint: null
+  deterministic: true

@@ -1,0 +1,8 @@
+- model.name=efficientnet_b0
+- datamodule.data_ratio=0.9
+- model=savefeatures.yaml
+- datamodule=ubc_feature.yaml
+- logger=none
+- datamodule.num_workers=8
+- trainer.devices=[3]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/efficientnet_b0/2022-08-24_23-18-41/checkpoints/epoch_011.ckpt

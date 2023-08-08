@@ -1,0 +1,7 @@
+- model=voting.yaml
+- logger.wandb.tags=[voting]
+- model.scheduler=CosineAnnealingLR
+- datamodule.num_workers=0
+- datamodule.batch_size=16
+- trainer.devices='0,4,5,6,7'
+- logger.wandb.project=ubc

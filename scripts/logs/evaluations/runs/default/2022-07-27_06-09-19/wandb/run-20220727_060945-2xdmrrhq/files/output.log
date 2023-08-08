@@ -1,0 +1,240 @@
+[[36m2022-07-27 06:09:46,339[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-07-27 06:09:47,451[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-07-27 06:09:47,456[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-07-27 06:09:47,456[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-07-27 06:09:47,456[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-07-27 06:09:47,457[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-07-27 06:09:47,458[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-07-27 06:10:02,441[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-07-27 06:10:02,443[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/5
+[[36m2022-07-27 06:10:54,051[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-07-27 06:10:54,052[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 5 nodes.
+[[36m2022-07-27 06:10:54,052[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 5 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-07-27 06:11:34,117[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-26_17-43-19/checkpoints/epoch_007.ckpt
+[[36m2022-07-27 06:11:46,726[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-07-27 06:11:51,990[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-26_17-43-19/checkpoints/epoch_007.ckpt
+
+
+
+Testing DataLoader 0:   8%|████████████████████▏                                                                                                                                                                                                                                                 | 2/26 [00:11<02:04,  5.19s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 2 + 18 + 10 + 10 + 0
+In result_2: 12 + 28 + 10 + 10 + 0
+In result_3: 22 + 38 + 20 + 10 + 0
+True label: 0
+Predict label: 0
+vote_cnt_0:22
+vote_cnt_1:38
+vote_cnt_2:20
+vote_cnt_3:10
+vote_cls:1
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 8 + 18 + 22 + 20 + 0
+In result_3: 18 + 28 + 32 + 20 + 0
+True label: 0
+Predict label: 0
+vote_cnt_0:18
+vote_cnt_1:28
+vote_cnt_2:32
+vote_cnt_3:20
+vote_cls:2
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+Testing DataLoader 0:  12%|██████████████████████████████▏                                                                                                                                                                                                                                       | 3/26 [00:25<03:35,  9.38s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 19 + 11 + 11 + 0
+In result_2: 10 + 29 + 11 + 11 + 0
+In result_3: 20 + 39 + 21 + 11 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 12 + 18 + 18 + 0
+In result_2: 9 + 21 + 19 + 18 + 0
+In result_3: 19 + 31 + 29 + 18 + 0
+True label: 1
+Predict label: 2
+vote_cnt_0:19
+vote_cnt_1:31
+vote_cnt_2:29
+vote_cnt_3:18
+vote_cls:1
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+Testing DataLoader 0:  15%|████████████████████████████████████████▎                                                                                                                                                                                                                             | 4/26 [00:36<03:39,  9.98s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+Testing DataLoader 0:  19%|██████████████████████████████████████████████████▍                                                                                                                                                                                                                   | 5/26 [00:45<03:18,  9.44s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 16 + 14 + 14 + 0
+In result_2: 8 + 24 + 16 + 14 + 0
+In result_3: 18 + 34 + 26 + 14 + 0
+True label: 1
+Predict label: 2
+vote_cnt_0:18
+vote_cnt_1:34
+vote_cnt_2:26
+vote_cnt_3:14
+vote_cls:1
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 16 + 14 + 14 + 0
+In result_2: 9 + 25 + 15 + 14 + 0
+In result_3: 19 + 35 + 25 + 14 + 0
+Testing DataLoader 0:  23%|████████████████████████████████████████████████████████████▍                                                                                                                                                                                                         | 6/26 [00:54<03:07,  9.36s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 13 + 17 + 17 + 0
+In result_2: 10 + 23 + 17 + 17 + 0
+In result_3: 20 + 33 + 27 + 17 + 0
+True label: 1
+Predict label: 2
+vote_cnt_0:20
+vote_cnt_1:33
+vote_cnt_2:27
+vote_cnt_3:17
+vote_cls:1
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 16 + 14 + 14 + 0
+In result_2: 10 + 26 + 14 + 14 + 0
+In result_3: 20 + 36 + 24 + 14 + 0
+Testing DataLoader 0:  27%|██████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                               | 7/26 [01:05<03:11, 10.07s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 12 + 18 + 18 + 0
+In result_2: 1 + 13 + 27 + 18 + 0
+In result_3: 11 + 23 + 37 + 18 + 0
+Testing DataLoader 0:  31%|████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                     | 8/26 [01:11<02:36,  8.70s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+Testing DataLoader 0:  35%|██████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                           | 9/26 [01:19<02:24,  8.53s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 11 + 19 + 19 + 0
+In result_2: 4 + 15 + 25 + 19 + 0
+In result_3: 14 + 25 + 35 + 19 + 0
+Testing DataLoader 0:  38%|████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                | 10/26 [01:29<02:21,  8.83s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+Testing DataLoader 0:  42%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                      | 11/26 [01:39<02:17,  9.19s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 13 + 17 + 17 + 0
+In result_2: 10 + 23 + 17 + 17 + 0
+In result_3: 20 + 33 + 27 + 17 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+Testing DataLoader 0:  46%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                            | 12/26 [01:52<02:24, 10.30s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 19 + 11 + 11 + 0
+In result_2: 8 + 27 + 13 + 11 + 0
+In result_3: 18 + 37 + 23 + 11 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+Testing DataLoader 0:  50%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                  | 13/26 [02:02<02:13, 10.29s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+Testing DataLoader 0:  54%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                        | 14/26 [02:10<01:56,  9.71s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 11 + 19 + 19 + 0
+In result_2: 0 + 11 + 29 + 19 + 0
+In result_3: 10 + 21 + 39 + 19 + 0
+Testing DataLoader 0:  58%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                              | 15/26 [02:18<01:40,  9.18s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+
+
+
+
+Testing DataLoader 0:  77%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                            | 20/26 [02:59<00:48,  8.01s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 11 + 19 + 19 + 0
+In result_2: 0 + 11 + 29 + 19 + 0
+In result_3: 10 + 21 + 39 + 19 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 4 + 14 + 26 + 20 + 0
+In result_3: 14 + 24 + 36 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 16 + 14 + 14 + 0
+In result_2: 9 + 25 + 15 + 14 + 0
+In result_3: 19 + 35 + 25 + 14 + 0
+Testing DataLoader 0:  81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                  | 21/26 [03:10<00:45,  9.04s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+
+Testing DataLoader 0:  88%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                              | 23/26 [03:26<00:25,  8.39s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 1 + 11 + 29 + 20 + 0
+In result_3: 11 + 21 + 39 + 20 + 0
+Testing DataLoader 0:  92%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                    | 24/26 [03:35<00:16,  8.43s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 0 + 10 + 30 + 20 + 0
+In result_3: 10 + 20 + 40 + 20 + 0
+In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 20 + 10 + 10 + 0
+In result_2: 10 + 30 + 10 + 10 + 0
+In result_3: 20 + 40 + 20 + 10 + 0
+
+Testing DataLoader 0: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [03:48<00:00,  7.33s/it]
+Error executing job with overrides: ['model=voting.yaml', "trainer.devices='0,4,5,6,7'", 'datamodule=ubc.yaml', 'ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-26_17-43-19/checkpoints/epoch_007.ckpt', 'model.decide_by_total_probs=False', 'model.weighted_sum=False', 'model.key=prob', 'model.sampling=trust', 'model.threshold=0.7']
+Traceback (most recent call last):
+  File "../test.py", line 22, in main
+    return test(config)
+  File "/home/compu/jh/project/colon_compare/src/testing_pipeline.py", line 71, in test
+    trainer.test(model=model, datamodule=datamodule, ckpt_path=config.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 938, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return self.strategy.launcher.launch(trainer_fn, *args, trainer=self, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 93, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 985, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1236, in _run
+    results = self._run_stage()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1320, in _run_stage
+    return self._run_evaluate()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1365, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/base.py", line 211, in run
+    output = self.on_run_end()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 183, in on_run_end
+    self._evaluation_epoch_end(self._outputs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 308, in _evaluation_epoch_end
+    self.trainer._call_lightning_module_hook("test_epoch_end", output_or_outputs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1595, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 477, in test_epoch_end
+    all_entropies = np.concatenate(np.array([i["entropy"] for i in outputs]))
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 477, in <listcomp>
+    all_entropies = np.concatenate(np.array([i["entropy"] for i in outputs]))
+KeyError: 'entropy'

@@ -1,0 +1,11 @@
+- datamodule.data_ratio=0.5
+- model.name=efficientnet_b0
+- model=voting.yaml
+- logger.wandb.project=havard
+- trainer.devices=[1,2,4]
+- datamodule=havard.yaml
+- logger.wandb.tags=[voting,ent,50%]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/harvard/classifycompare/efficientnet_b0/2022-08-24_20-59-34/checkpoints/epoch_007.ckpt
+- model.key=ent
+- model.threshold=0.4
+- model.sampling=random

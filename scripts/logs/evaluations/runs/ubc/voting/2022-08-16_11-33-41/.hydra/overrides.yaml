@@ -1,0 +1,9 @@
+- model=voting.yaml
+- logger.wandb.project=ubc
+- trainer.devices=[5,6,7]
+- datamodule=ubc.yaml
+- logger.wandb.tags=[kmeans,voting,ent]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-26_17-43-19/checkpoints/epoch_007.ckpt
+- model.key=ent
+- model.threshold=0.3
+- model.sampling=kmeans

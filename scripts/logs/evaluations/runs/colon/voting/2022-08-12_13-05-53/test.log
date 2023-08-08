@@ -1,0 +1,26 @@
+[2022-08-12 13:05:57,273][src.utils][INFO] - Disabling python warnings! <config.ignore_warnings=True>
+[2022-08-12 13:05:57,273][src.utils][INFO] - Printing config tree with Rich! <config.print_config=True>
+[2022-08-12 13:05:57,323][pytorch_lightning.utilities.seed][INFO] - Global seed set to 42
+[2022-08-12 13:05:57,324][src.testing_pipeline][INFO] - Instantiating datamodule <src.datamodules.colon_test2_datamodule.ColonTestDataModule>
+[2022-08-12 13:05:57,413][src.testing_pipeline][INFO] - Instantiating model <src.models.voting_module.VotingLitModule>
+[2022-08-12 13:05:57,541][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpecel1uj0
+[2022-08-12 13:05:57,542][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpecel1uj0/_remote_module_non_sriptable.py
+[2022-08-12 13:06:40,575][src.testing_pipeline][INFO] - Instantiating callback <pytorch_lightning.callbacks.RichProgressBar>
+[2022-08-12 13:06:40,584][src.testing_pipeline][INFO] - Instantiating logger <pytorch_lightning.loggers.wandb.WandbLogger>
+[2022-08-12 13:06:45,700][src.testing_pipeline][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2022-08-12 13:06:51,587][pytorch_lightning.utilities.rank_zero][INFO] - Using 16bit native Automatic Mixed Precision (AMP)
+[2022-08-12 13:06:51,592][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True, used: True
+[2022-08-12 13:06:51,593][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2022-08-12 13:06:51,593][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2022-08-12 13:06:51,594][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2022-08-12 13:06:51,603][src.testing_pipeline][INFO] - Starting testing!
+[2022-08-12 13:06:51,606][pytorch_lightning.utilities.seed][INFO] - Global seed set to 42
+[2022-08-12 13:06:51,608][pytorch_lightning.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+[2022-08-12 13:06:51,630][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2022-08-12 13:06:51,630][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 1 nodes.
+[2022-08-12 13:06:51,631][pytorch_lightning.utilities.rank_zero][INFO] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+[2022-08-12 13:07:37,158][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classify4/2022-08-11_18-04-24/checkpoints/epoch_006.ckpt

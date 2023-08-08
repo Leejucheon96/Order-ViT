@@ -1,0 +1,228 @@
+2022-08-17 10:27:34,632 INFO    StreamThr :423460 [internal.py:wandb_internal():90] W&B internal server running at pid: 423460, started at: 2022-08-17 10:27:34.631169
+2022-08-17 10:27:34,635 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: status
+2022-08-17 10:27:34,636 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: status
+2022-08-17 10:27:34,638 DEBUG   SenderThread:423460 [sender.py:send():302] send: header
+2022-08-17 10:27:34,639 INFO    WriterThread:423460 [datastore.py:open_for_write():75] open: ./wandb/run-20220817_102734-lizfivtd/run-lizfivtd.wandb
+2022-08-17 10:27:34,758 DEBUG   SenderThread:423460 [sender.py:send():302] send: run
+2022-08-17 10:27:34,760 INFO    SenderThread:423460 [sender.py:_maybe_setup_resume():578] checking resume status for None/ubc/lizfivtd
+2022-08-17 10:28:05,089 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:08,923 ERROR   SenderThread:423460 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 703, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 423, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 330, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/wandb/sdk/internal/internal_api.py", line 204, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/usr/local/lib/python3.8/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2022-08-17 10:28:10,190 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:15,291 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:20,392 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:25,492 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:30,593 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:35,694 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:40,794 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:45,895 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:50,995 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:28:56,096 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:01,197 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:05,950 INFO    SenderThread:423460 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20220817_102734-lizfivtd/files
+2022-08-17 10:29:05,950 INFO    SenderThread:423460 [sender.py:_start_run_threads():913] run started: lizfivtd with start time 1660724854.627127
+2022-08-17 10:29:05,950 DEBUG   SenderThread:423460 [sender.py:send():302] send: exit
+2022-08-17 10:29:05,951 INFO    SenderThread:423460 [sender.py:send_exit():438] handling exit code: 1
+2022-08-17 10:29:05,951 INFO    SenderThread:423460 [sender.py:send_exit():440] handling runtime: 0
+2022-08-17 10:29:05,951 INFO    SenderThread:423460 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-17 10:29:05,951 INFO    SenderThread:423460 [sender.py:send_exit():446] send defer
+2022-08-17 10:29:05,951 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,951 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,951 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,951 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,951 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:05,952 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,954 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-17 10:29:05,954 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,954 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-17 10:29:05,954 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 1
+2022-08-17 10:29:05,955 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,955 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-17 10:29:05,955 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,955 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-17 10:29:05,955 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 2
+2022-08-17 10:29:05,955 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,955 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-17 10:29:05,955 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,955 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-17 10:29:05,955 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 3
+2022-08-17 10:29:05,956 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,956 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-17 10:29:05,956 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,956 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-17 10:29:05,956 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 4
+2022-08-17 10:29:05,956 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,956 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-17 10:29:05,956 DEBUG   SenderThread:423460 [sender.py:send():302] send: summary
+2022-08-17 10:29:05,957 INFO    SenderThread:423460 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-17 10:29:05,957 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,957 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-17 10:29:05,957 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 5
+2022-08-17 10:29:05,957 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,957 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-17 10:29:05,957 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,958 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-17 10:29:05,958 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 6
+2022-08-17 10:29:05,958 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,958 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-17 10:29:05,958 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,958 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-17 10:29:05,958 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 7
+2022-08-17 10:29:05,958 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:05,958 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-17 10:29:05,958 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:05,958 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-17 10:29:05,958 INFO    SenderThread:423460 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-17 10:29:06,055 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:06,951 INFO    Thread-12 :423460 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220817_102734-lizfivtd/files/wandb-summary.json
+2022-08-17 10:29:06,952 INFO    SenderThread:423460 [dir_watcher.py:finish():392] scan: ./wandb/run-20220817_102734-lizfivtd/files
+2022-08-17 10:29:06,952 INFO    SenderThread:423460 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220817_102734-lizfivtd/files/config.yaml config.yaml
+2022-08-17 10:29:06,952 INFO    SenderThread:423460 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220817_102734-lizfivtd/files/wandb-summary.json wandb-summary.json
+2022-08-17 10:29:06,952 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 8
+2022-08-17 10:29:06,952 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:06,956 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:06,958 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-17 10:29:06,958 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:06,958 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-17 10:29:06,958 INFO    SenderThread:423460 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-17 10:29:07,066 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,066 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,171 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,171 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,273 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,273 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,374 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,375 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,476 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,477 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,578 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,578 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,680 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,680 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,702 INFO    Thread-15 :423460 [upload_job.py:push():138] Uploaded file ./wandb/run-20220817_102734-lizfivtd/files/wandb-summary.json
+2022-08-17 10:29:07,782 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,782 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,883 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,883 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:07,984 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:07,984 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,086 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,086 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,188 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,188 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,290 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,290 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,392 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,392 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,499 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,499 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,544 INFO    Thread-14 :423460 [upload_job.py:push():138] Uploaded file ./wandb/run-20220817_102734-lizfivtd/files/config.yaml
+2022-08-17 10:29:08,600 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,601 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,702 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:08,702 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:08,744 INFO    Thread-11 :423460 [sender.py:transition_state():459] send defer: 9
+2022-08-17 10:29:08,745 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:08,745 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-17 10:29:08,745 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:08,745 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-17 10:29:08,803 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:13,904 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:15,992 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 10
+2022-08-17 10:29:15,992 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:15,993 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:15,994 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:15,994 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-17 10:29:15,994 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:15,994 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-17 10:29:15,995 INFO    SenderThread:423460 [sender.py:transition_state():459] send defer: 11
+2022-08-17 10:29:15,995 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: defer
+2022-08-17 10:29:15,995 DEBUG   SenderThread:423460 [sender.py:send():302] send: final
+2022-08-17 10:29:15,995 INFO    HandlerThread:423460 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-17 10:29:15,996 DEBUG   SenderThread:423460 [sender.py:send():302] send: footer
+2022-08-17 10:29:15,996 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: defer
+2022-08-17 10:29:15,996 INFO    SenderThread:423460 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-17 10:29:16,095 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:29:16,095 DEBUG   SenderThread:423460 [sender.py:send_request():316] send_request: poll_exit
+2022-08-17 10:29:16,096 INFO    SenderThread:423460 [file_pusher.py:join():176] waiting for file pusher
+2022-08-17 10:29:17,567 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-17 10:29:17,568 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-17 10:29:17,569 INFO    MainThread:423460 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2022-08-17 10:29:17,569 INFO    MainThread:423460 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2022-08-17 10:29:17,569 INFO    MainThread:423460 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2022-08-17 10:29:17,570 DEBUG   HandlerThread:423460 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-17 10:29:17,570 INFO    HandlerThread:423460 [handler.py:finish():810] shutting down handler
+2022-08-17 10:29:17,996 INFO    WriterThread:423460 [datastore.py:close():279] close: ./wandb/run-20220817_102734-lizfivtd/run-lizfivtd.wandb
+2022-08-17 10:29:18,466 INFO    SenderThread:423460 [sender.py:finish():1312] shutting down sender
+2022-08-17 10:29:18,466 INFO    SenderThread:423460 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-17 10:29:18,466 INFO    SenderThread:423460 [file_pusher.py:join():176] waiting for file pusher
+2022-08-17 10:29:18,573 INFO    MainThread:423460 [internal.py:handle_exit():80] Internal process exited

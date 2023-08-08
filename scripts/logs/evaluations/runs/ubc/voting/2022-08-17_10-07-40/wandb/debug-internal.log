@@ -1,0 +1,90 @@
+2022-08-17 10:08:52,322 INFO    StreamThr :393811 [internal.py:wandb_internal():90] W&B internal server running at pid: 393811, started at: 2022-08-17 10:08:52.321385
+2022-08-17 10:08:52,342 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: status
+2022-08-17 10:08:52,343 DEBUG   SenderThread:393811 [sender.py:send_request():316] send_request: status
+2022-08-17 10:08:52,362 DEBUG   SenderThread:393811 [sender.py:send():302] send: header
+2022-08-17 10:08:52,363 INFO    WriterThread:393811 [datastore.py:open_for_write():75] open: ./wandb/run-20220817_100852-3km8432n/run-3km8432n.wandb
+2022-08-17 10:08:52,428 DEBUG   SenderThread:393811 [sender.py:send():302] send: run
+2022-08-17 10:08:52,430 INFO    SenderThread:393811 [sender.py:_maybe_setup_resume():578] checking resume status for None/ubc/3km8432n
+2022-08-17 10:09:22,777 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:26,639 ERROR   SenderThread:393811 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.8/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.8/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 703, in reraise
+    raise value
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 423, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 330, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/wandb/sdk/internal/internal_api.py", line 204, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/usr/local/lib/python3.8/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/requests/adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2022-08-17 10:09:27,877 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:32,978 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:38,079 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:43,180 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:48,280 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:53,381 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:09:58,482 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:03,583 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:08,684 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:13,785 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:18,885 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:23,986 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:29,087 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:34,188 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:39,289 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:44,389 DEBUG   HandlerThread:393811 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-17 10:10:49,502 INFO    MainThread:393811 [internal.py:handle_exit():80] Internal process exited
+2022-08-17 10:10:49,503 WARNING MsgRouterThr:393811 [router.py:message_loop():73] EOFError seen in message_loop

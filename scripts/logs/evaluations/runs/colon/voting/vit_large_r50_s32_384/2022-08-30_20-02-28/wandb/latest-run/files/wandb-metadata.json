@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.13.0-35-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-08-30T18:03:03.329872",
+    "startedAt": "2022-08-30T18:03:01.662817",
+    "docker": null,
+    "gpu": "NVIDIA RTX A6000",
+    "gpu_count": 8,
+    "cpu_count": 128,
+    "cuda": null,
+    "args": [
+        "datamodule.data_ratio=0.25",
+        "seed=123",
+        "model=voting.yaml",
+        "logger.wandb.project=colon_new",
+        "trainer.devices=[4]",
+        "datamodule=colon.yaml",
+        "logger.wandb.tags=[voting,prob,25%]",
+        "ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/vit_large_r50_s32_384/2022-08-30_14-28-07/checkpoints/epoch_002.ckpt",
+        "model.key=prob",
+        "model.threshold=0.75",
+        "model.sampling=random"
+    ],
+    "state": "running",
+    "program": "../test.py",
+    "git": {
+        "remote": "https://github.com/OZOOOOOH/colon_compare.git",
+        "commit": "11eedf736e018977157dd56dc0d791d36b7cb3a0"
+    },
+    "email": "ojhgold@gmail.com",
+    "root": "/home/compu/jh/project/colon_compare",
+    "host": "07ed14eb23be",
+    "username": "root",
+    "executable": "/usr/bin/python"
+}

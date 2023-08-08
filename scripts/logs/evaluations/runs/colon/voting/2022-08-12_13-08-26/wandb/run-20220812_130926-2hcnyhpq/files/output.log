@@ -1,0 +1,65 @@
+
+[[36m2022-08-12 13:09:28,270[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-08-12 13:09:37,391[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-08-12 13:09:37,395[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-08-12 13:09:37,395[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-08-12 13:09:37,395[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-08-12 13:09:37,395[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-08-12 13:09:37,397[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-08-12 13:09:37,399[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-08-12 13:09:37,401[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+[[36m2022-08-12 13:09:37,403[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-08-12 13:09:37,403[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 1 nodes.
+[[36m2022-08-12 13:09:37,404[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-08-12 13:10:26,255[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-08_20-11-18/checkpoints/epoch_001.ckpt
+[[36m2022-08-12 13:10:34,707[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-08-12 13:10:40,616[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-08_20-11-18/checkpoints/epoch_001.ckpt
+[38mTesting[39m [38m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [38m0/6886[39m [38m0:00:01 • -:--:--[39m [38m0.00it/s
+[?25h
+Error executing job with overrides: ['model=voting.yaml', 'logger.wandb.project=colon', 'trainer.devices=[1]', 'datamodule=colon_test2.yaml', 'logger.wandb.tags=[test2,voting,by_all,ent]', 'ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-08_20-11-18/checkpoints/epoch_001.ckpt', 'model.key=ent', 'model.threshold=0.35']
+Traceback (most recent call last):
+  File "../test.py", line 22, in main
+    return test(config)
+  File "/home/compu/jh/project/colon_compare/src/testing_pipeline.py", line 78, in test
+    trainer.test(model=model, datamodule=datamodule, ckpt_path=config.ckpt_path,)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 938, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return self.strategy.launcher.launch(trainer_fn, *args, trainer=self, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 93, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 985, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1236, in _run
+    results = self._run_stage()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1320, in _run_stage
+    return self._run_evaluate()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1365, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 128, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 224, in _evaluation_step
+    output = self.trainer._call_strategy_hook("test_step", *kwargs.values())
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1765, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/ddp.py", line 362, in test_step
+    return self.model.test_step(*args, **kwargs)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 396, in test_step
+    ) = self.step_voting(batch)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 373, in step_voting
+    trained_features = self.bring_trained_feature(mode=self.hparams.sampling)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 177, in bring_trained_feature
+    features = np.load(f"{path}/features/{name}")
+  File "/usr/local/lib/python3.8/dist-packages/numpy/lib/npyio.py", line 416, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/home/compu/jh/data/voting//features/colontest_vit_large_r50_s32_384.npy'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

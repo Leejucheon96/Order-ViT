@@ -1,0 +1,82 @@
+original_work_dir: ${hydra:runtime.cwd}
+data_dir: ${original_work_dir}/data/
+print_config: true
+ignore_warnings: true
+seed: 42
+name: default
+ckpt_path: /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/harvard/classifycompare/vit_large_r50_s32_384/2022-08-23_12-43-38/checkpoints/epoch_003.ckpt
+datamodule:
+  _target_: src.datamodules.harvard_datamodule.HarvardDataModule
+  data_dir: ${data_dir}
+  batch_size: 16
+  num_workers: 0
+  pin_memory: true
+  img_size: 384
+  drop_last: false
+  data_name: harvard
+  data_ratio: 0.5
+model:
+  _target_: src.models.voting_module.VotingLitModule
+  name: vit_large_r50_s32_384
+  lr: 0.0001
+  weight_decay: 0.0005
+  t_max: 10
+  min_lr: 1.0e-06
+  T_0: 15
+  T_mult: 2
+  eta_min: 1.0e-06
+  pretrained: true
+  scheduler: ReduceLROnPlateau
+  factor: 0.5
+  patience: 3
+  eps: 1.0e-08
+  loss_weight: 0.25
+  threshold: 0.9
+  num_sample: 10
+  key: prob
+  sampling: random
+  decide_by_total_probs: false
+  weighted_sum: false
+  module_type: voting
+callbacks:
+  rich_progress_bar:
+    _target_: pytorch_lightning.callbacks.RichProgressBar
+    theme:
+      _target_: pytorch_lightning.callbacks.progress.rich_progress.RichProgressBarTheme
+      description: green_yellow
+      progress_bar: green1
+      progress_bar_finished: green1
+      progress_bar_pulse: '#6206E0'
+      batch_progress: green_yellow
+      time: grey82
+      processing_speed: grey82
+      metrics: grey82
+logger:
+  wandb:
+    _target_: pytorch_lightning.loggers.wandb.WandbLogger
+    project: havard
+    name: ${name}
+    save_dir: .
+    offline: false
+    id: null
+    log_model: false
+    prefix: ''
+    job_type: train
+    group: ''
+    tags:
+    - voting
+    - prob
+    - 50%
+    reinit: true
+trainer:
+  _target_: pytorch_lightning.Trainer
+  min_epochs: 1
+  max_epochs: 100
+  precision: 16
+  strategy: ddp
+  accelerator: gpu
+  devices:
+  - 2
+  num_sanity_val_steps: 2
+  resume_from_checkpoint: null
+  deterministic: true

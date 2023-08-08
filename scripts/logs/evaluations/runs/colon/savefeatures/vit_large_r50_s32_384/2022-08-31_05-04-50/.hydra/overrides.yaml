@@ -1,0 +1,9 @@
+- datamodule.data_ratio=0.25
+- seed=1
+- model.seed=1
+- model=savefeatures.yaml
+- datamodule=colon_feature.yaml
+- logger=none
+- datamodule.num_workers=8
+- trainer.devices=[3]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/vit_large_r50_s32_384/2022-08-31_00-17-08/checkpoints/epoch_002.ckpt

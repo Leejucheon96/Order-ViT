@@ -1,0 +1,10 @@
+- datamodule.data_ratio=0.75
+- model=voting.yaml
+- logger.wandb.project=colon_new
+- trainer.devices=[4]
+- datamodule=colon.yaml
+- logger.wandb.tags=[voting,ent,75%]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/vit_large_r50_s32_384/2022-08-26_10-10-45/checkpoints/epoch_006.ckpt
+- model.key=ent
+- model.threshold=0.85
+- model.sampling=random

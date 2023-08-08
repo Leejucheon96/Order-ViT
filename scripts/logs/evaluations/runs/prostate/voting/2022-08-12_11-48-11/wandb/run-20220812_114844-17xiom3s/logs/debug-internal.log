@@ -1,0 +1,602 @@
+2022-08-12 11:48:44,223 INFO    StreamThr :14442 [internal.py:wandb_internal():90] W&B internal server running at pid: 14442, started at: 2022-08-12 11:48:44.222407
+2022-08-12 11:48:44,233 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: status
+2022-08-12 11:48:44,238 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: status
+2022-08-12 11:48:44,249 INFO    WriterThread:14442 [datastore.py:open_for_write():75] open: ./wandb/run-20220812_114844-17xiom3s/run-17xiom3s.wandb
+2022-08-12 11:48:44,254 DEBUG   SenderThread:14442 [sender.py:send():302] send: header
+2022-08-12 11:48:44,356 DEBUG   SenderThread:14442 [sender.py:send():302] send: run
+2022-08-12 11:48:44,358 INFO    SenderThread:14442 [sender.py:_maybe_setup_resume():578] checking resume status for None/prostate/17xiom3s
+2022-08-12 11:48:45,256 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: check_version
+2022-08-12 11:48:45,282 INFO    SenderThread:14442 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20220812_114844-17xiom3s/files
+2022-08-12 11:48:45,283 INFO    SenderThread:14442 [sender.py:_start_run_threads():913] run started: 17xiom3s with start time 1660297724.227023
+2022-08-12 11:48:45,283 DEBUG   SenderThread:14442 [sender.py:send():302] send: summary
+2022-08-12 11:48:45,283 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-12 11:48:45,284 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: check_version
+2022-08-12 11:48:45,345 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: run_start
+2022-08-12 11:48:45,569 DEBUG   HandlerThread:14442 [meta.py:__init__():35] meta init
+2022-08-12 11:48:45,569 DEBUG   HandlerThread:14442 [meta.py:__init__():50] meta init done
+2022-08-12 11:48:45,569 DEBUG   HandlerThread:14442 [meta.py:probe():216] probe
+2022-08-12 11:48:46,267 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/wandb-summary.json
+2022-08-12 11:48:46,456 DEBUG   HandlerThread:14442 [meta.py:_setup_git():206] setup git
+2022-08-12 11:48:46,487 DEBUG   HandlerThread:14442 [meta.py:_setup_git():213] setup git done
+2022-08-12 11:48:46,487 DEBUG   HandlerThread:14442 [meta.py:_save_pip():54] save pip
+2022-08-12 11:48:46,488 DEBUG   HandlerThread:14442 [meta.py:_save_pip():68] save pip done
+2022-08-12 11:48:46,488 DEBUG   HandlerThread:14442 [meta.py:probe():254] probe done
+2022-08-12 11:48:46,585 DEBUG   SenderThread:14442 [sender.py:send():302] send: files
+2022-08-12 11:48:46,585 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-12 11:48:46,598 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:48:46,598 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:48:46,816 DEBUG   SenderThread:14442 [sender.py:send():302] send: telemetry
+2022-08-12 11:48:46,817 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 11:48:46,817 DEBUG   SenderThread:14442 [sender.py:send():302] send: telemetry
+2022-08-12 11:48:46,817 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 11:48:46,817 WARNING SenderThread:14442 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-12 11:48:47,267 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/requirements.txt
+2022-08-12 11:48:47,267 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/wandb-metadata.json
+2022-08-12 11:48:47,268 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:48:47,282 INFO    Thread-16 :14442 [upload_job.py:push():138] Uploaded file /tmp/tmpwofvaw95wandb/28tjm2tl-wandb-metadata.json
+2022-08-12 11:48:49,268 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:48:49,753 DEBUG   SenderThread:14442 [sender.py:send():302] send: config
+2022-08-12 11:48:51,268 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:49:04,751 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:49:04,751 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:49:15,287 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/config.yaml
+2022-08-12 11:49:19,989 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:49:19,990 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:49:25,223 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:49:35,214 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:49:35,214 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:49:37,299 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:49:49,318 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:49:50,532 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:49:50,533 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:49:53,320 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:49:55,321 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:49:57,321 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:49:59,322 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:01,323 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:03,329 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:05,330 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:05,762 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:50:05,763 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:50:07,331 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:08,520 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:50:11,333 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:13,334 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:15,335 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:17,338 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:19,343 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:21,012 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:50:21,012 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:50:21,344 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:23,345 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:25,345 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:27,350 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:29,351 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:31,351 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:33,352 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:35,353 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:36,222 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:50:36,222 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:50:37,354 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:39,354 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:41,355 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:43,356 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:45,359 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:47,359 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:49,361 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:51,361 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:51,452 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:50:51,452 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:50:51,760 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:50:53,362 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:55,363 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:57,364 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:50:59,364 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:01,365 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:03,366 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:05,368 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:06,673 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:51:06,673 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:51:07,368 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:09,370 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:11,371 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:13,371 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:15,372 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:17,373 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:19,374 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:21,375 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:21,890 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:51:21,891 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:51:23,378 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:25,376 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:27,379 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:31,381 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:33,381 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:35,383 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:37,111 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:51:37,112 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:51:37,322 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:51:37,383 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:39,384 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:41,385 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:43,388 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:45,389 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:47,393 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:51,402 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:52,324 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:51:52,325 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:51:55,407 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:51:57,407 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:01,425 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:03,418 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:07,430 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:07,545 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:52:07,545 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:52:09,431 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:11,432 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:15,433 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:17,434 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:21,435 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:22,842 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:52:22,842 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:52:23,436 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:27,437 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:29,694 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:52:31,439 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:33,440 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:37,441 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:39,008 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:52:39,008 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:52:39,442 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:41,442 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:43,443 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:45,444 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:47,445 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:49,446 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:51,446 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:53,447 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:54,237 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:52:54,237 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:52:55,448 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:57,449 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:52:59,449 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:01,452 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:03,455 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:05,456 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:07,456 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:09,452 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:53:09,452 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:53:09,457 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:11,458 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:13,459 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:15,460 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:17,460 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:18,122 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:53:19,461 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:21,462 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:23,463 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:24,668 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:53:24,668 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:53:25,463 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:27,464 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:29,465 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:31,466 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:33,466 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:35,467 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:37,471 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:39,472 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:39,911 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:53:39,911 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:53:41,473 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:43,473 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:45,475 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:47,479 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:49,491 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:51,491 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:53,492 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:55,123 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:53:55,123 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:53:57,499 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:53:59,500 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:01,387 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:54:01,501 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:03,502 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:05,502 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:07,503 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:09,503 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:10,342 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:54:10,343 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:54:11,504 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:13,505 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:15,506 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:17,506 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:19,507 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:21,508 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:23,509 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:25,509 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:25,561 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:54:25,561 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:54:27,510 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:31,511 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:33,516 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:35,512 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:39,514 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:40,828 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:54:40,828 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:54:41,515 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:42,204 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:54:43,521 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:47,517 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:49,517 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:51,518 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:53,519 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:55,519 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:54:56,047 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:54:56,048 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:54:57,520 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:01,535 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:03,535 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:05,536 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:07,542 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:09,547 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:11,259 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:55:11,259 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:55:11,550 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:13,549 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:15,549 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:17,550 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:19,551 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:21,552 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:23,552 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:23,892 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:55:25,553 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:26,477 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:55:26,478 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:55:27,554 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:29,555 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:33,556 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:35,563 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:37,564 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:39,564 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:41,565 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:41,715 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:55:41,715 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:55:43,566 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:47,568 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:49,568 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:53,570 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:55,570 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:55:56,934 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:55:56,935 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:55:57,575 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:01,580 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:03,580 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:04,284 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:56:05,581 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:07,584 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:09,583 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:11,587 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:12,163 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:56:12,163 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:56:15,588 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:19,590 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:21,591 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:23,592 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:25,592 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:27,397 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:56:27,398 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:56:29,594 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:31,595 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:35,596 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:37,597 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:39,597 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:41,598 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:42,659 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:56:42,659 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:56:43,599 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:45,600 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:47,600 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:49,607 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:51,608 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:53,163 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:56:53,609 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:55,614 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:57,615 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:56:57,876 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:56:57,877 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:56:59,616 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:01,619 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:03,625 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:05,620 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:07,627 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:09,625 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:11,626 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:13,084 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:57:13,085 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:57:13,632 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:15,627 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:17,628 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:19,629 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:21,629 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:23,630 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:25,631 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:27,632 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:28,308 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:57:28,308 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:57:29,632 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:31,633 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:33,634 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:35,636 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:37,636 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:39,637 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:41,638 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:43,518 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:57:43,518 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:57:43,639 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:43,730 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:57:45,639 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:47,650 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:49,650 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:51,651 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:53,652 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:57,653 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:57:58,732 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:57:58,732 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:57:59,654 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:01,655 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:03,655 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:05,656 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:07,658 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:09,660 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:12,662 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:13,951 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:58:13,952 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:58:14,662 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:16,663 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:18,664 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:20,665 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:24,666 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:26,667 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:28,667 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:29,168 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:58:29,168 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:58:31,176 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:58:32,669 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:34,669 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:36,670 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:38,671 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:40,677 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:42,678 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:44,387 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:58:44,388 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:58:44,679 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:46,680 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:48,681 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:50,681 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:52,682 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:54,683 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:56,684 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:58,685 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:58:59,615 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:58:59,615 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:59:00,686 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:04,687 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:06,688 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:08,689 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:10,689 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:14,696 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:14,832 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:59:14,832 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:59:18,697 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:22,131 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 11:59:22,702 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:26,704 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:28,704 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:30,074 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:59:30,074 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:59:30,707 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:34,712 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:36,715 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:40,716 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:42,717 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:44,717 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:45,306 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 11:59:45,306 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 11:59:48,723 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:50,723 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:52,724 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:54,725 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:56,727 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 11:59:58,727 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:00,544 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 12:00:00,544 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 12:00:00,728 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:02,729 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:04,729 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:06,730 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:08,731 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:10,732 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:12,733 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:14,733 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:15,039 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 12:00:15,757 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 12:00:15,758 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 12:00:16,734 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:18,735 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:20,738 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:22,737 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:24,737 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:26,744 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:28,739 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:30,740 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:30,987 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-12 12:00:30,987 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: stop_status
+2022-08-12 12:00:32,741 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:34,741 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:36,742 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:38,743 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:40,743 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:40,936 DEBUG   SenderThread:14442 [sender.py:send():302] send: files
+2022-08-12 12:00:40,936 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file media/images/test/conf_matrix_0_a146b537b7748c7eace0.png with policy now
+2022-08-12 12:00:40,936 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-12 12:00:40,937 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: history
+2022-08-12 12:00:40,938 DEBUG   SenderThread:14442 [sender.py:send():302] send: summary
+2022-08-12 12:00:40,939 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-12 12:00:40,951 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-12 12:00:40,952 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,952 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,952 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,952 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,952 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,952 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,953 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,953 DEBUG   SenderThread:14442 [sender.py:send():302] send: metric
+2022-08-12 12:00:40,953 DEBUG   SenderThread:14442 [sender.py:send():302] send: history
+2022-08-12 12:00:40,953 DEBUG   SenderThread:14442 [sender.py:send():302] send: summary
+2022-08-12 12:00:40,953 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-12 12:00:41,686 INFO    Thread-17 :14442 [upload_job.py:push():138] Uploaded file /tmp/tmpwofvaw95wandb/hp34wbpb-media/images/test/conf_matrix_0_a146b537b7748c7eace0.png
+2022-08-12 12:00:41,744 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/wandb-summary.json
+2022-08-12 12:00:41,744 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/media/images/test/conf_matrix_0_a146b537b7748c7eace0.png
+2022-08-12 12:00:41,744 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/media/images/test
+2022-08-12 12:00:41,745 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/media/images
+2022-08-12 12:00:41,745 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220812_114844-17xiom3s/files/media
+2022-08-12 12:00:42,493 INFO    Thread-18 :14442 [upload_job.py:push():138] Uploaded file /tmp/tmpwofvaw95wandb/16ei9b19-media/images/test/conf_matrix_0_a146b537b7748c7eace0.png
+2022-08-12 12:00:42,745 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:43,679 DEBUG   SenderThread:14442 [sender.py:send():302] send: telemetry
+2022-08-12 12:00:43,679 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:43,679 DEBUG   SenderThread:14442 [sender.py:send():302] send: exit
+2022-08-12 12:00:43,680 INFO    SenderThread:14442 [sender.py:send_exit():438] handling exit code: 0
+2022-08-12 12:00:43,680 INFO    SenderThread:14442 [sender.py:send_exit():440] handling runtime: 718
+2022-08-12 12:00:43,680 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-12 12:00:43,680 INFO    SenderThread:14442 [sender.py:send_exit():446] send defer
+2022-08-12 12:00:43,681 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:43,681 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:43,681 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-12 12:00:43,681 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:43,681 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-12 12:00:43,681 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 1
+2022-08-12 12:00:43,682 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:43,682 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-12 12:00:43,745 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/wandb-summary.json
+2022-08-12 12:00:45,041 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:45,041 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,041 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-12 12:00:45,041 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 2
+2022-08-12 12:00:45,042 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:45,042 DEBUG   SenderThread:14442 [sender.py:send():302] send: stats
+2022-08-12 12:00:45,042 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:45,044 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-12 12:00:45,045 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,045 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-12 12:00:45,045 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 3
+2022-08-12 12:00:45,045 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:45,045 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-12 12:00:45,046 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,046 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-12 12:00:45,046 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 4
+2022-08-12 12:00:45,046 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:45,046 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-12 12:00:45,046 DEBUG   SenderThread:14442 [sender.py:send():302] send: summary
+2022-08-12 12:00:45,046 INFO    SenderThread:14442 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-12 12:00:45,047 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,047 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-12 12:00:45,047 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 5
+2022-08-12 12:00:45,047 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:45,047 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-12 12:00:45,047 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,047 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-12 12:00:45,146 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:45,322 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 6
+2022-08-12 12:00:45,326 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:45,326 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:45,327 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-12 12:00:45,327 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,327 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-12 12:00:45,428 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:45,746 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/config.yaml
+2022-08-12 12:00:45,747 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/wandb-summary.json
+2022-08-12 12:00:45,859 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 7
+2022-08-12 12:00:45,860 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:45,860 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:45,860 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-12 12:00:45,861 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:45,861 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-12 12:00:45,861 INFO    SenderThread:14442 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-12 12:00:45,965 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:46,747 INFO    Thread-12 :14442 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:46,747 INFO    SenderThread:14442 [dir_watcher.py:finish():392] scan: ./wandb/run-20220812_114844-17xiom3s/files
+2022-08-12 12:00:46,747 INFO    SenderThread:14442 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220812_114844-17xiom3s/files/wandb-metadata.json wandb-metadata.json
+2022-08-12 12:00:46,748 INFO    SenderThread:14442 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220812_114844-17xiom3s/files/output.log output.log
+2022-08-12 12:00:46,748 INFO    SenderThread:14442 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220812_114844-17xiom3s/files/requirements.txt requirements.txt
+2022-08-12 12:00:46,748 INFO    SenderThread:14442 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220812_114844-17xiom3s/files/config.yaml config.yaml
+2022-08-12 12:00:46,748 INFO    SenderThread:14442 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220812_114844-17xiom3s/files/wandb-summary.json wandb-summary.json
+2022-08-12 12:00:46,748 INFO    SenderThread:14442 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220812_114844-17xiom3s/files/media/images/test/conf_matrix_0_a146b537b7748c7eace0.png media/images/test/conf_matrix_0_a146b537b7748c7eace0.png
+2022-08-12 12:00:46,748 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 8
+2022-08-12 12:00:46,748 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:46,755 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:46,755 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-12 12:00:46,755 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:46,755 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-12 12:00:46,755 INFO    SenderThread:14442 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-12 12:00:46,850 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:46,850 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:46,953 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:46,953 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,054 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,054 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,155 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,155 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,256 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,256 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,357 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,357 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,458 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,458 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,559 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,559 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,572 INFO    Thread-19 :14442 [upload_job.py:push():138] Uploaded file ./wandb/run-20220812_114844-17xiom3s/files/output.log
+2022-08-12 12:00:47,574 INFO    Thread-20 :14442 [upload_job.py:push():138] Uploaded file ./wandb/run-20220812_114844-17xiom3s/files/requirements.txt
+2022-08-12 12:00:47,592 INFO    Thread-22 :14442 [upload_job.py:push():138] Uploaded file ./wandb/run-20220812_114844-17xiom3s/files/wandb-summary.json
+2022-08-12 12:00:47,607 INFO    Thread-21 :14442 [upload_job.py:push():138] Uploaded file ./wandb/run-20220812_114844-17xiom3s/files/config.yaml
+2022-08-12 12:00:47,660 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,660 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,761 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:47,761 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:47,807 INFO    Thread-11 :14442 [sender.py:transition_state():459] send defer: 9
+2022-08-12 12:00:47,808 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:47,808 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-12 12:00:47,808 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:47,808 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-12 12:00:47,866 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:48,563 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 10
+2022-08-12 12:00:48,564 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:48,564 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:48,564 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-12 12:00:48,565 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:48,565 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-12 12:00:48,565 INFO    SenderThread:14442 [sender.py:transition_state():459] send defer: 11
+2022-08-12 12:00:48,570 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: defer
+2022-08-12 12:00:48,570 INFO    HandlerThread:14442 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-12 12:00:48,570 DEBUG   SenderThread:14442 [sender.py:send():302] send: final
+2022-08-12 12:00:48,570 DEBUG   SenderThread:14442 [sender.py:send():302] send: footer
+2022-08-12 12:00:48,570 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: defer
+2022-08-12 12:00:48,570 INFO    SenderThread:14442 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-12 12:00:48,665 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-12 12:00:48,666 DEBUG   SenderThread:14442 [sender.py:send_request():316] send_request: poll_exit
+2022-08-12 12:00:48,666 INFO    SenderThread:14442 [file_pusher.py:join():176] waiting for file pusher
+2022-08-12 12:00:49,208 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-12 12:00:49,209 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-12 12:00:49,209 DEBUG   HandlerThread:14442 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-12 12:00:49,210 INFO    HandlerThread:14442 [handler.py:finish():810] shutting down handler
+2022-08-12 12:00:49,574 INFO    WriterThread:14442 [datastore.py:close():279] close: ./wandb/run-20220812_114844-17xiom3s/run-17xiom3s.wandb
+2022-08-12 12:00:50,106 INFO    SenderThread:14442 [sender.py:finish():1312] shutting down sender
+2022-08-12 12:00:50,107 INFO    SenderThread:14442 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-12 12:00:50,107 INFO    SenderThread:14442 [file_pusher.py:join():176] waiting for file pusher
+2022-08-12 12:00:51,213 INFO    MainThread:14442 [internal.py:handle_exit():80] Internal process exited

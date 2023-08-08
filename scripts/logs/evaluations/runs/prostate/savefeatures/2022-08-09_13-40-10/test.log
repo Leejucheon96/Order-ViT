@@ -1,0 +1,18 @@
+[2022-08-09 13:40:14,060][src.utils][INFO] - Disabling python warnings! <config.ignore_warnings=True>
+[2022-08-09 13:40:14,060][src.utils][INFO] - Printing config tree with Rich! <config.print_config=True>
+[2022-08-09 13:40:14,096][pytorch_lightning.utilities.seed][INFO] - Global seed set to 42
+[2022-08-09 13:40:14,097][src.testing_pipeline][INFO] - Instantiating datamodule <src.datamodules.prostate_datamodule.ProstateDataModule>
+[2022-08-09 13:40:14,167][src.testing_pipeline][INFO] - Instantiating model <src.models.save_features_module.SaveFeaturesLitModule>
+[2022-08-09 13:40:14,241][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp8xw0d9nd
+[2022-08-09 13:40:14,241][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp8xw0d9nd/_remote_module_non_sriptable.py
+[2022-08-09 13:40:37,167][src.testing_pipeline][INFO] - Instantiating callback <pytorch_lightning.callbacks.RichProgressBar>
+[2022-08-09 13:40:37,169][src.testing_pipeline][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2022-08-09 13:40:44,765][pytorch_lightning.utilities.rank_zero][INFO] - Using 16bit native Automatic Mixed Precision (AMP)
+[2022-08-09 13:40:47,161][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True (cuda), used: True
+[2022-08-09 13:40:47,162][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2022-08-09 13:40:47,162][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2022-08-09 13:40:47,162][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2022-08-09 13:40:47,279][src.testing_pipeline][INFO] - Starting testing!
+[2022-08-09 13:40:49,528][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/prostate/classifycompare/2022-08-09_10-34-32/checkpoints/epoch_005.ckpt
+[2022-08-09 13:41:46,809][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[2022-08-09 13:41:46,810][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/prostate/classifycompare/2022-08-09_10-34-32/checkpoints/epoch_005.ckpt

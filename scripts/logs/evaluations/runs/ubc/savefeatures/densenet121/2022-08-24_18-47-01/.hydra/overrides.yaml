@@ -1,0 +1,8 @@
+- model.name=densenet121
+- datamodule.data_ratio=0.3
+- model=savefeatures.yaml
+- datamodule=ubc_feature.yaml
+- logger=none
+- datamodule.num_workers=8
+- trainer.devices=[3]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/densenet121/2022-08-24_15-31-41/checkpoints/epoch_015.ckpt

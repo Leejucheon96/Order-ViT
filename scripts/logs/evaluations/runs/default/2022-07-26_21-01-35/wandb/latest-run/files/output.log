@@ -1,0 +1,65 @@
+
+[[36m2022-07-26 21:02:00,248[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-07-26 21:02:02,542[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-07-26 21:02:02,545[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-07-26 21:02:02,545[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-07-26 21:02:02,546[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-07-26 21:02:02,546[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-07-26 21:02:02,547[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-07-26 21:02:17,645[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-07-26 21:02:17,648[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/5
+[[36m2022-07-26 21:03:04,719[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-07-26 21:03:04,720[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 5 nodes.
+[[36m2022-07-26 21:03:04,720[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 5 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-07-26 21:03:43,151[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-24_05-18-38/checkpoints/epoch_004.ckpt
+[[36m2022-07-26 21:03:54,686[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-07-26 21:03:58,875[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-24_05-18-38/checkpoints/epoch_004.ckpt
+Testing DataLoader 0:   0%|                                                                                                                                                                                                                                                            | 0/53 [00:00<?, ?it/s]
+Error executing job with overrides: ['model=voting.yaml', 'logger.wandb.tags=[voting]', 'model.scheduler=CosineAnnealingLR', 'datamodule.num_workers=0', 'datamodule.batch_size=16', "trainer.devices='0,4,5,6,7'", 'logger.wandb.project=ubc']
+Traceback (most recent call last):
+  File "../test.py", line 22, in main
+    return test(config)
+  File "/home/compu/jh/project/colon_compare/src/testing_pipeline.py", line 71, in test
+    trainer.test(model=model, datamodule=datamodule, ckpt_path=config.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 938, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return self.strategy.launcher.launch(trainer_fn, *args, trainer=self, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 93, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 985, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1236, in _run
+    results = self._run_stage()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1320, in _run_stage
+    return self._run_evaluate()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1365, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/base.py", line 204, in run
+    self.advance(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 128, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 224, in _evaluation_step
+    output = self.trainer._call_strategy_hook("test_step", *kwargs.values())
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1765, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/ddp.py", line 362, in test_step
+    return self.model.test_step(*args, **kwargs)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 401, in test_step
+    loss, origin_preds_4cls, new_preds_4cls, target_4cls, cnt_diff, cnt_correct_diff=self.step_voting(batch)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 380, in step_voting
+    x) if self.hparams.sampling == 'random' else self.bring_convinced_trained_data(x)
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 240, in bring_convinced_trained_data
+    train_img_path,train_img_labels,data_type = self.get_trained_dataset()
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 142, in get_trained_dataset
+    data_type = self.check_which_dataset()
+  File "/home/compu/jh/project/colon_compare/src/models/voting_module.py", line 139, in check_which_dataset
+    raise ValueError('Dataset name is not correct')
+ValueError: Dataset name is not correct

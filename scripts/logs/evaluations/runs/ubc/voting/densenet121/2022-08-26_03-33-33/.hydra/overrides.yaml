@@ -1,0 +1,11 @@
+- datamodule.data_ratio=0.7
+- model.name=densenet121
+- model=voting.yaml
+- logger.wandb.project=ubc
+- trainer.devices=[2]
+- datamodule=ubc.yaml
+- logger.wandb.tags=[voting,ent,70%]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/densenet121/2022-08-24_16-35-48/checkpoints/epoch_011.ckpt
+- model.key=ent
+- model.threshold=0.5
+- model.sampling=random

@@ -1,0 +1,49 @@
+original_work_dir: ${hydra:runtime.cwd}
+data_dir: ${original_work_dir}/data/
+print_config: true
+ignore_warnings: true
+seed: 42
+name: default
+ckpt_path: /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/densenet121/2022-08-24_15-31-41/checkpoints/epoch_015.ckpt
+datamodule:
+  _target_: src.datamodules.feature_datamodule.UbcDataModule
+  data_dir: ${data_dir}
+  batch_size: 16
+  num_workers: 8
+  pin_memory: true
+  img_size: 384
+  drop_last: false
+  data_name: ubc
+  data_ratio: 0.3
+model:
+  _target_: src.models.save_features_module.SaveFeaturesLitModule
+  name: densenet121
+  lr: 0.0001
+  pretrained: true
+  module_type: savefeatures
+callbacks:
+  rich_progress_bar:
+    _target_: pytorch_lightning.callbacks.RichProgressBar
+    theme:
+      _target_: pytorch_lightning.callbacks.progress.rich_progress.RichProgressBarTheme
+      description: green_yellow
+      progress_bar: green1
+      progress_bar_finished: green1
+      progress_bar_pulse: '#6206E0'
+      batch_progress: green_yellow
+      time: grey82
+      processing_speed: grey82
+      metrics: grey82
+logger: {}
+trainer:
+  _target_: pytorch_lightning.Trainer
+  min_epochs: 1
+  max_epochs: 100
+  precision: 16
+  strategy: ddp
+  accelerator: gpu
+  devices:
+  - 3
+  num_sanity_val_steps: 2
+  resume_from_checkpoint: null
+  deterministic: true

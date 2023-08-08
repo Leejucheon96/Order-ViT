@@ -1,0 +1,8 @@
+- model.name=densenet121
+- datamodule.data_ratio=0.1
+- model=savefeatures.yaml
+- datamodule=havard_feature.yaml
+- logger=none
+- datamodule.num_workers=8
+- trainer.devices=[3]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/harvard/classifycompare/densenet121/2022-08-24_23-40-19/checkpoints/epoch_005.ckpt

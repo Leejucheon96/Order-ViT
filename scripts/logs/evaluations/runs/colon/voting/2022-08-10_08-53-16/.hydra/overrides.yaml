@@ -1,0 +1,11 @@
+- model=voting.yaml
+- logger.wandb.project=colon
+- trainer.devices=[3]
+- datamodule=colon_all.yaml
+- logger.wandb.tags=[voting,ent]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-08_20-11-18/checkpoints/epoch_001.ckpt
+- model.decide_by_total_probs=False
+- model.weighted_sum=False
+- model.key=ent
+- model.sampling=trust
+- model.threshold=0.5

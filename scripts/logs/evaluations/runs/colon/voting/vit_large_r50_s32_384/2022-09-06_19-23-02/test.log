@@ -1,0 +1,19 @@
+[2022-09-06 19:23:07,550][src.utils][INFO] - Disabling python warnings! <config.ignore_warnings=True>
+[2022-09-06 19:23:07,550][src.utils][INFO] - Printing config tree with Rich! <config.print_config=True>
+[2022-09-06 19:23:07,605][pytorch_lightning.utilities.seed][INFO] - Global seed set to 42
+[2022-09-06 19:23:07,607][src.testing_pipeline][INFO] - Instantiating datamodule <src.datamodules.colon_datamodule.ColonDataModule>
+[2022-09-06 19:23:07,685][src.testing_pipeline][INFO] - Instantiating model <src.models.new_voting_module.VotingLitModule>
+[2022-09-06 19:23:07,774][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp6gzfm5rg
+[2022-09-06 19:23:07,775][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp6gzfm5rg/_remote_module_non_sriptable.py
+[2022-09-06 19:23:27,137][src.testing_pipeline][INFO] - Instantiating callback <pytorch_lightning.callbacks.RichProgressBar>
+[2022-09-06 19:23:27,139][src.testing_pipeline][INFO] - Instantiating logger <pytorch_lightning.loggers.wandb.WandbLogger>
+[2022-09-06 19:23:29,915][src.testing_pipeline][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2022-09-06 19:23:29,920][pytorch_lightning.utilities.rank_zero][INFO] - Using 16bit native Automatic Mixed Precision (AMP)
+[2022-09-06 19:23:29,922][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True, used: True
+[2022-09-06 19:23:29,923][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2022-09-06 19:23:29,923][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2022-09-06 19:23:29,923][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2022-09-06 19:23:29,924][src.testing_pipeline][INFO] - Starting testing!
+[2022-09-06 19:23:30,889][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-01_18-07-45/checkpoints/epoch_008.ckpt
+[2022-09-06 19:24:27,988][pytorch_lightning.accelerators.gpu][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[2022-09-06 19:24:27,990][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-01_18-07-45/checkpoints/epoch_008.ckpt

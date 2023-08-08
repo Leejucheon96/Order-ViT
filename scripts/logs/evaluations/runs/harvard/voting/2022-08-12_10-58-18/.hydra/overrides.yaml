@@ -1,0 +1,8 @@
+- model=voting.yaml
+- logger.wandb.project=havard
+- trainer.devices=[1,2,3,4]
+- datamodule=havard.yaml
+- logger.wandb.tags=[voting,ent]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/harvard/classifycompare/2022-08-11_13-27-50/checkpoints/epoch_007.ckpt
+- model.key=ent
+- model.threshold=0.45

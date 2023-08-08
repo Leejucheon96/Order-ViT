@@ -1,0 +1,67 @@
+CONFIG
+├── datamodule
+│   └── _target_: src.datamodules.colon_feature_datamodule.ColonDataModule                                                                                                                                                          
+│       data_dir: /home/compu/jh/project/colon_compare/scripts/data/                                                                                                                                                                
+│       batch_size: 16                                                                                                                                                                                                              
+│       num_workers: 8                                                                                                                                                                                                              
+│       pin_memory: true                                                                                                                                                                                                            
+│       img_size: 384                                                                                                                                                                                                               
+│       drop_last: false                                                                                                                                                                                                            
+│       data_name: colon                                                                                                                                                                                                            
+│                                                                                                                                                                                                                                   
+├── model
+│   └── _target_: src.models.classifycompare_module.ClassifyCompareLitModule                                                                                                                                                        
+│       name: vit_large_r50_s32_384                                                                                                                                                                                                 
+│       lr: 0.0001                                                                                                                                                                                                                  
+│       weight_decay: 0.0005                                                                                                                                                                                                        
+│       t_max: 10                                                                                                                                                                                                                   
+│       min_lr: 1.0e-06                                                                                                                                                                                                             
+│       T_0: 15                                                                                                                                                                                                                     
+│       T_mult: 2                                                                                                                                                                                                                   
+│       eta_min: 1.0e-06                                                                                                                                                                                                            
+│       pretrained: true                                                                                                                                                                                                            
+│       scheduler: ReduceLROnPlateau                                                                                                                                                                                                
+│       factor: 0.5                                                                                                                                                                                                                 
+│       patience: 3                                                                                                                                                                                                                 
+│       eps: 1.0e-08                                                                                                                                                                                                                
+│       loss_weight: 0.25                                                                                                                                                                                                           
+│       threshold: 0.8                                                                                                                                                                                                              
+│       num_sample: 10                                                                                                                                                                                                              
+│       key: prob                                                                                                                                                                                                                   
+│       sampling: trust                                                                                                                                                                                                             
+│       decide_by_total_probs: false                                                                                                                                                                                                
+│       weighted_sum: false                                                                                                                                                                                                         
+│       module_type: classifycompare                                                                                                                                                                                                
+│                                                                                                                                                                                                                                   
+├── callbacks
+│   └── {}                                                                                                                                                                                                                          
+│                                                                                                                                                                                                                                   
+├── logger
+│   └── {}                                                                                                                                                                                                                          
+│                                                                                                                                                                                                                                   
+├── trainer
+│   └── _target_: pytorch_lightning.Trainer                                                                                                                                                                                         
+│       min_epochs: 1                                                                                                                                                                                                               
+│       max_epochs: 100                                                                                                                                                                                                             
+│       precision: 16                                                                                                                                                                                                               
+│       strategy: ddp                                                                                                                                                                                                               
+│       accelerator: gpu                                                                                                                                                                                                            
+│       devices: 4,5,6,7                                                                                                                                                                                                            
+│       num_sanity_val_steps: 2                                                                                                                                                                                                     
+│       resume_from_checkpoint: null                                                                                                                                                                                                
+│       deterministic: true                                                                                                                                                                                                         
+│                                                                                                                                                                                                                                   
+├── original_work_dir
+│   └── /home/compu/jh/project/colon_compare/scripts                                                                                                                                                                                
+├── data_dir
+│   └── /home/compu/jh/project/colon_compare/scripts/data/                                                                                                                                                                          
+├── print_config
+│   └── True                                                                                                                                                                                                                        
+├── ignore_warnings
+│   └── True                                                                                                                                                                                                                        
+├── seed
+│   └── 42                                                                                                                                                                                                                          
+├── name
+│   └── default                                                                                                                                                                                                                     
+└── ckpt_path
+    └── /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-01_18-07-45/checkpoints/epoch_008.ckpt                                                                                     

@@ -1,0 +1,44 @@
+
+[[36m2022-08-12 13:49:13,499[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-08-12 13:49:18,785[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-08-12 13:49:18,788[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-08-12 13:49:18,789[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-08-12 13:49:18,789[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-08-12 13:49:18,789[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-08-12 13:49:18,791[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-08-12 13:49:18,794[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-08-12 13:49:18,797[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+[[36m2022-08-12 13:49:18,799[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-08-12 13:49:18,800[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 1 nodes.
+[[36m2022-08-12 13:49:18,800[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-08-12 13:50:08,494[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classify4/2022-08-11_18-04-24/checkpoints/epoch_006.ckpt
+Error executing job with overrides: ['model=voting.yaml', 'logger.wandb.project=colon', 'trainer.devices=[1]', 'datamodule=colon_test2.yaml', 'logger.wandb.tags=[test2,voting,prob]', 'ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classify4/2022-08-11_18-04-24/checkpoints/epoch_006.ckpt', 'model.key=prob', 'model.threshold=0.75']
+Traceback (most recent call last):
+  File "../test.py", line 22, in main
+    return test(config)
+  File "/home/compu/jh/project/colon_compare/src/testing_pipeline.py", line 78, in test
+    trainer.test(model=model, datamodule=datamodule, ckpt_path=config.ckpt_path,)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 938, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return self.strategy.launcher.launch(trainer_fn, *args, trainer=self, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 93, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 985, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1179, in _run
+    self._restore_modules_and_callbacks(ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1141, in _restore_modules_and_callbacks
+    self._checkpoint_connector.restore_model()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 179, in restore_model
+    self.trainer.strategy.load_model_state_dict(self._loaded_checkpoint)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/strategy.py", line 319, in load_model_state_dict
+    self.lightning_module.load_state_dict(checkpoint["state_dict"])
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1497, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for VotingLitModule:
+	Missing key(s) in state_dict: "discriminator_layer2.0.weight", "discriminator_layer2.0.bias", "discriminator_layer2.2.weight", "discriminator_layer2.2.bias", "discriminator_layer2.4.weight", "discriminator_layer2.4.bias".
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

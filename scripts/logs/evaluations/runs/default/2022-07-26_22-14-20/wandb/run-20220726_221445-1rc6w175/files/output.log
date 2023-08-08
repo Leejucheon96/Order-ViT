@@ -1,0 +1,90 @@
+[[36m2022-07-26 22:14:46,842[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-07-26 22:14:49,073[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-07-26 22:14:49,076[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-07-26 22:14:49,076[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-07-26 22:14:49,077[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-07-26 22:14:49,077[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-07-26 22:14:49,078[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-07-26 22:15:04,184[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-07-26 22:15:04,186[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/5
+[[36m2022-07-26 22:15:50,567[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-07-26 22:15:50,568[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 5 nodes.
+[[36m2022-07-26 22:15:50,568[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 5 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-07-26 22:16:30,010[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-26_17-43-19/checkpoints/epoch_007.ckpt
+[[36m2022-07-26 22:16:42,078[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-07-26 22:16:46,321[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-26_17-43-19/checkpoints/epoch_007.ckpt
+
+
+
+Testing DataLoader 0:   8%|██████████████████▊                                                                                                                                                                                                                                 | 2/26 [00:13<02:33,  6.38s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 10 + 20 + 20 + 0
+In result_2: 8 + 18 + 22 + 20 + 0
+In result_3: 18 + 28 + 32 + 20 + 0
+True label: 0
+Predict label: 0
+vote_cnt_0:18
+vote_cnt_1:28
+vote_cnt_2:32
+vote_cnt_3:20
+vote_cls:2
+
+
+Testing DataLoader 0:  19%|██████████████████████████████████████████████▉                                                                                                                                                                                                     | 5/26 [00:38<02:45,  7.87s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 16 + 14 + 14 + 0
+In result_2: 8 + 24 + 16 + 14 + 0
+In result_3: 18 + 34 + 26 + 14 + 0
+True label: 1
+Predict label: 2
+vote_cnt_0:18
+vote_cnt_1:34
+vote_cnt_2:26
+vote_cnt_3:14
+vote_cls:1
+Testing DataLoader 0:  23%|████████████████████████████████████████████████████████▎                                                                                                                                                                                           | 6/26 [00:47<02:44,  8.25s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 13 + 17 + 17 + 0
+In result_2: 10 + 23 + 17 + 17 + 0
+In result_3: 20 + 33 + 27 + 17 + 0
+True label: 1
+Predict label: 2
+vote_cnt_0:20
+vote_cnt_1:33
+vote_cnt_2:27
+vote_cnt_3:17
+vote_cls:1
+
+
+
+
+Testing DataLoader 0:  42%|██████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                            | 11/26 [01:32<02:09,  8.60s/it]In result_0: 0 + 10 + 10 + 10 + 0
+In result_1: 0 + 13 + 17 + 17 + 0
+In result_2: 10 + 23 + 17 + 17 + 0
+In result_3: 20 + 33 + 27 + 17 + 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Testing DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 26/26 [03:24<00:00,  7.87s/it]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m   test/cnt_correct_diff   [39m│[35m            2.0            [39m│
+│[36m       test/cnt_diff       [39m│[35m            5.0            [39m│
+│[36m       test/f1_macro       [39m│[35m    0.6245351433753967     [39m│
+│[36m         test/loss         [39m│[35m    0.6044451594352722     [39m│
+│[36m       test/new_acc        [39m│[35m    0.8286407589912415     [39m│
+│[36m      test/origin_acc      [39m│[35m    0.8281553983688354     [39m│
+│[36m       test/wqKappa        [39m│[35m    0.7625612616539001     [39m│
+└───────────────────────────┴───────────────────────────┘

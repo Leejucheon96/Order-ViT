@@ -1,0 +1,9 @@
+- model=voting.yaml
+- logger.wandb.project=prostate
+- trainer.devices=[5]
+- datamodule=prostate.yaml
+- logger.wandb.tags=[kmeans,voting,prob]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/prostate/classifycompare/2022-08-09_10-34-32/checkpoints/epoch_005.ckpt
+- model.key=prob
+- model.threshold=0.95
+- model.sampling=kmeans

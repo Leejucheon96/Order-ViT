@@ -1,0 +1,65 @@
+[[36m2022-09-07 07:45:07,361[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-09-07 07:45:07,369[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-09-07 07:45:07,371[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-09-07 07:45:07,371[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-09-07 07:45:07,371[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-09-07 07:45:07,372[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-09-07 07:45:07,373[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-09-07 07:45:08,336[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-01_18-07-45/checkpoints/epoch_008.ckpt
+[[36m2022-09-07 07:46:03,549[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-09-07 07:46:03,550[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classifycompare/2022-08-01_18-07-45/checkpoints/epoch_008.ckpt
+
+Case 4-2 occurred
+Case 4-1 occurred
+Something Wrong happened
+[('<', 30), ('<', 30), ('<', 17), ('>', 28)]
+[0, 0, 13, 2]
+tensor(1, device='cuda:4') tensor(3, device='cuda:4')
+
+tensor(2, device='cuda:4') tensor(2, device='cuda:4')
+tensor(1, device='cuda:4') tensor(1, device='cuda:4')
+
+Case 4-2 occurred
+Case 4-1 occurred
+Something Wrong happened
+[('<', 30), ('<', 30), ('>', 26), ('>', 30)]
+[0, 0, 4, 0]
+tensor(2, device='cuda:4') tensor(2, device='cuda:4')
+tensor(2, device='cuda:4') tensor(2, device='cuda:4')
+
+
+
+
+tensor(2, device='cuda:4') tensor(2, device='cuda:4')
+
+
+
+tensor(2, device='cuda:4') tensor(2, device='cuda:4')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m   test/cnt_correct_diff   [39m│[35m            0.0            [39m│
+│[36m       test/cnt_diff       [39m│[35m            1.0            [39m│
+│[36m       test/f1_macro       [39m│[35m    0.8550140857696533     [39m│
+│[36m         test/loss         [39m│[35m    0.3087417483329773     [39m│
+│[36m       test/new_acc        [39m│[35m    0.8916876316070557     [39m│
+│[36m      test/origin_acc      [39m│[35m    0.8916876316070557     [39m│
+│[36m       test/wqKappa        [39m│[35m    0.9490619897842407     [39m│
+└───────────────────────────┴───────────────────────────┘
+[38mTesting[39m [38m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[39m [38m100/100[39m [38m0:01:06 • 0:00:00[39m [38m1.53it/s
+[?25h

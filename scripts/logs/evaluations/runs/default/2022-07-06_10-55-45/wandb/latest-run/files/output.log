@@ -1,0 +1,68 @@
+[[36m2022-07-06 10:56:16,178[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Instantiating trainer <pytorch_lightning.Trainer>
+[[36m2022-07-06 10:56:16,394[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Using 16bit native Automatic Mixed Precision (AMP)
+[[36m2022-07-06 10:56:16,397[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - GPU available: True, used: True
+[[36m2022-07-06 10:56:16,398[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - TPU available: False, using: 0 TPU cores
+[[36m2022-07-06 10:56:16,398[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - IPU available: False, using: 0 IPUs
+[[36m2022-07-06 10:56:16,398[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - HPU available: False, using: 0 HPUs
+[[36m2022-07-06 10:56:16,400[39m][[34msrc.testing_pipeline[39m][[32mINFO[39m] - Starting testing!
+[[36m2022-07-06 10:56:24,003[39m][[34mpytorch_lightning.utilities.seed[39m][[32mINFO[39m] - Global seed set to 42
+[[36m2022-07-06 10:56:24,005[39m][[34mpytorch_lightning.utilities.distributed[39m][[32mINFO[39m] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/3
+[[36m2022-07-06 10:57:09,404[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Added key: store_based_barrier_key:1 to store for rank: 0
+[[36m2022-07-06 10:57:09,404[39m][[34mtorch.distributed.distributed_c10d[39m][[32mINFO[39m] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 3 nodes.
+[[36m2022-07-06 10:57:09,404[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 3 processes
+----------------------------------------------------------------------------------------------------
+[[36m2022-07-06 10:57:22,308[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-06_07-59-18/checkpoints/epoch_006.ckpt
+[[36m2022-07-06 10:57:32,883[39m][[34mpytorch_lightning.accelerators.gpu[39m][[32mINFO[39m] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[[36m2022-07-06 10:57:34,167[39m][[34mpytorch_lightning.utilities.rank_zero[39m][[32mINFO[39m] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/default/2022-07-06_07-59-18/checkpoints/epoch_006.ckpt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Testing DataLoader 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 17/17 [01:11<00:00,  3.36s/it]
+Error executing job with overrides: ['datamodule.num_workers=0', "trainer.devices='1,6,7'", 'datamodule.batch_size=32', 'logger.wandb.tags=[tripletGL]']
+Traceback (most recent call last):
+  File "../test.py", line 22, in main
+    return test(config)
+  File "/home/compu/jh/project/colon_compare/src/testing_pipeline.py", line 67, in test
+    trainer.test(model=model, datamodule=datamodule, ckpt_path=config.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 938, in test
+    return self._call_and_handle_interrupt(self._test_impl, model, dataloaders, ckpt_path, verbose, datamodule)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 721, in _call_and_handle_interrupt
+    return self.strategy.launcher.launch(trainer_fn, *args, trainer=self, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/strategies/launchers/subprocess_script.py", line 93, in launch
+    return function(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 985, in _test_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1236, in _run
+    results = self._run_stage()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1320, in _run_stage
+    return self._run_evaluate()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1365, in _run_evaluate
+    eval_loop_results = self._evaluation_loop.run()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/base.py", line 211, in run
+    output = self.on_run_end()
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 188, in on_run_end
+    self._evaluation_epoch_end(self._outputs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 313, in _evaluation_epoch_end
+    self.trainer._call_lightning_module_hook("test_epoch_end", output_or_outputs)
+  File "/usr/local/lib/python3.8/dist-packages/pytorch_lightning/trainer/trainer.py", line 1595, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+  File "/home/compu/jh/project/colon_compare/src/models/colon_module.py", line 659, in test_epoch_end
+    self.logger.experiment,log({"test/conf_matrix":wandb.plot.confusion_matrix(probs=None,
+NameError: name 'log' is not defined

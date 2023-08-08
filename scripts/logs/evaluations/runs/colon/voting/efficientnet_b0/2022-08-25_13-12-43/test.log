@@ -1,0 +1,29 @@
+[2022-08-25 13:12:53,874][src.utils][INFO] - Disabling python warnings! <config.ignore_warnings=True>
+[2022-08-25 13:12:53,875][src.utils][INFO] - Printing config tree with Rich! <config.print_config=True>
+[2022-08-25 13:12:53,958][pytorch_lightning.utilities.seed][INFO] - Global seed set to 42
+[2022-08-25 13:12:53,960][src.testing_pipeline][INFO] - Instantiating datamodule <src.datamodules.colon_datamodule.ColonDataModule>
+[2022-08-25 13:12:54,158][src.testing_pipeline][INFO] - Instantiating model <src.models.voting_module.VotingLitModule>
+[2022-08-25 13:12:54,261][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpob4fy26w
+[2022-08-25 13:12:54,262][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpob4fy26w/_remote_module_non_sriptable.py
+[2022-08-25 13:12:54,425][timm.models.helpers][INFO] - Loading pretrained weights from url (https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/efficientnet_b0_ra-3dd342df.pth)
+[2022-08-25 13:12:56,741][src.testing_pipeline][INFO] - Instantiating callback <pytorch_lightning.callbacks.RichProgressBar>
+[2022-08-25 13:12:56,749][src.testing_pipeline][INFO] - Instantiating logger <pytorch_lightning.loggers.wandb.WandbLogger>
+[2022-08-25 13:13:00,137][src.testing_pipeline][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2022-08-25 13:13:00,148][pytorch_lightning.utilities.rank_zero][INFO] - Using 16bit native Automatic Mixed Precision (AMP)
+[2022-08-25 13:13:00,151][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True, used: True
+[2022-08-25 13:13:00,156][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2022-08-25 13:13:00,156][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2022-08-25 13:13:00,156][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2022-08-25 13:13:00,157][src.testing_pipeline][INFO] - Starting testing!
+[2022-08-25 13:13:00,161][pytorch_lightning.utilities.seed][INFO] - Global seed set to 42
+[2022-08-25 13:13:00,163][pytorch_lightning.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+[2022-08-25 13:13:00,164][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2022-08-25 13:13:00,165][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 1 nodes.
+[2022-08-25 13:13:00,165][pytorch_lightning.utilities.rank_zero][INFO] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+[2022-08-25 13:13:37,676][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/efficientnet_b0/2022-08-24_23-18-41/checkpoints/epoch_011.ckpt
+[2022-08-25 13:13:39,713][pytorch_lightning.accelerators.gpu][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[2022-08-25 13:13:40,447][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from checkpoint at /home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/ubc/classifycompare/efficientnet_b0/2022-08-24_23-18-41/checkpoints/epoch_011.ckpt

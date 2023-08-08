@@ -1,0 +1,600 @@
+2022-08-16 15:50:04,418 INFO    StreamThr :3759224 [internal.py:wandb_internal():90] W&B internal server running at pid: 3759224, started at: 2022-08-16 15:50:04.417479
+2022-08-16 15:50:04,424 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: status
+2022-08-16 15:50:04,425 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: status
+2022-08-16 15:50:04,429 DEBUG   SenderThread:3759224 [sender.py:send():302] send: header
+2022-08-16 15:50:04,429 INFO    WriterThread:3759224 [datastore.py:open_for_write():75] open: ./wandb/run-20220816_155004-uuoe88m6/run-uuoe88m6.wandb
+2022-08-16 15:50:04,540 DEBUG   SenderThread:3759224 [sender.py:send():302] send: run
+2022-08-16 15:50:04,544 INFO    SenderThread:3759224 [sender.py:_maybe_setup_resume():578] checking resume status for None/prostate/uuoe88m6
+2022-08-16 15:50:05,280 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: check_version
+2022-08-16 15:50:05,288 INFO    SenderThread:3759224 [dir_watcher.py:__init__():216] watching files in: ./wandb/run-20220816_155004-uuoe88m6/files
+2022-08-16 15:50:05,288 INFO    SenderThread:3759224 [sender.py:_start_run_threads():913] run started: uuoe88m6 with start time 1660657804.409055
+2022-08-16 15:50:05,288 DEBUG   SenderThread:3759224 [sender.py:send():302] send: summary
+2022-08-16 15:50:05,289 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 15:50:05,289 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: check_version
+2022-08-16 15:50:05,349 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: run_start
+2022-08-16 15:50:06,101 DEBUG   HandlerThread:3759224 [meta.py:__init__():35] meta init
+2022-08-16 15:50:06,101 DEBUG   HandlerThread:3759224 [meta.py:__init__():50] meta init done
+2022-08-16 15:50:06,101 DEBUG   HandlerThread:3759224 [meta.py:probe():216] probe
+2022-08-16 15:50:06,112 DEBUG   HandlerThread:3759224 [meta.py:_setup_git():206] setup git
+2022-08-16 15:50:06,141 DEBUG   HandlerThread:3759224 [meta.py:_setup_git():213] setup git done
+2022-08-16 15:50:06,142 DEBUG   HandlerThread:3759224 [meta.py:_save_pip():54] save pip
+2022-08-16 15:50:06,142 DEBUG   HandlerThread:3759224 [meta.py:_save_pip():68] save pip done
+2022-08-16 15:50:06,142 DEBUG   HandlerThread:3759224 [meta.py:probe():254] probe done
+2022-08-16 15:50:06,252 DEBUG   SenderThread:3759224 [sender.py:send():302] send: files
+2022-08-16 15:50:06,253 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-16 15:50:06,261 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:50:06,263 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:50:06,291 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-metadata.json
+2022-08-16 15:50:06,291 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-summary.json
+2022-08-16 15:50:06,291 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/requirements.txt
+2022-08-16 15:50:06,481 DEBUG   SenderThread:3759224 [sender.py:send():302] send: telemetry
+2022-08-16 15:50:06,481 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 15:50:06,482 DEBUG   SenderThread:3759224 [sender.py:send():302] send: telemetry
+2022-08-16 15:50:06,482 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 15:50:06,482 WARNING SenderThread:3759224 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-08-16 15:50:06,483 DEBUG   SenderThread:3759224 [sender.py:send():302] send: config
+2022-08-16 15:50:06,940 INFO    Thread-16 :3759224 [upload_job.py:push():138] Uploaded file /tmp/tmpmv57sv1bwandb/3a3r4ozk-wandb-metadata.json
+2022-08-16 15:50:07,289 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:50:09,290 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:50:22,674 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:50:22,675 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:50:35,301 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/config.yaml
+2022-08-16 15:50:37,891 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:50:37,891 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:50:42,843 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:50:53,120 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:50:53,121 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:50:53,309 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:50:59,312 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:51:01,313 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:51:03,314 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:51:08,336 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:51:08,336 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:51:19,015 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:51:23,568 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:51:23,568 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:51:38,788 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:51:38,788 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:51:49,338 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:51:51,340 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:51:52,754 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:51:53,341 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:51:54,013 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:51:54,014 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:51:55,342 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:03,345 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:05,347 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:07,348 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:09,349 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:11,349 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:13,350 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:14,014 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:52:14,014 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:52:15,354 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:17,355 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:19,356 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:21,359 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:23,360 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:25,361 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:27,362 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:27,557 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:52:29,255 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:52:29,255 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:52:29,363 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:31,364 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:33,365 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:35,366 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:37,367 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:39,368 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:41,370 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:43,371 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:44,490 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:52:44,490 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:52:45,372 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:47,373 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:49,374 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:51,375 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:53,376 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:55,377 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:57,378 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:59,378 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:52:59,709 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:52:59,709 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:53:01,379 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:02,735 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:53:03,380 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:05,381 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:07,382 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:09,383 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:11,384 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:13,385 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:14,923 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:53:14,923 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:53:17,387 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:21,388 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:23,389 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:25,392 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:27,393 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:29,394 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:30,171 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:53:30,171 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:53:31,395 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:33,396 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:35,397 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:37,399 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:39,400 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:41,400 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:43,401 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:45,402 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:45,428 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:53:45,428 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:53:47,403 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:49,404 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:50,326 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:53:51,405 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:53,406 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:55,407 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:57,408 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:53:59,409 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:00,707 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:54:00,707 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:54:01,409 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:03,410 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:07,412 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:09,413 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:13,415 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:15,415 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:15,931 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:54:15,931 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:54:17,416 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:19,425 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:21,426 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:23,427 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:27,429 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:29,430 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:31,157 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:54:31,158 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:54:31,431 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:33,432 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:35,434 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:37,434 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:39,435 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:41,436 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:42,524 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:54:43,437 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:45,438 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:46,377 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:54:46,377 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:54:47,439 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:49,440 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:51,441 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:53,442 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:55,443 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:54:59,444 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:01,446 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:01,606 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:55:01,606 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:55:03,446 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:05,447 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:07,448 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:09,449 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:11,450 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:13,451 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:15,452 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:16,826 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:55:16,827 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:55:17,453 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:19,455 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:21,456 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:23,457 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:27,459 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:29,460 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:31,461 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:32,049 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:55:32,050 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:55:33,234 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:55:33,463 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:35,464 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:39,465 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:41,467 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:43,468 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:45,473 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:47,301 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:55:47,301 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:55:47,474 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:49,476 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:53,483 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:55,484 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:57,487 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:55:59,491 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:01,492 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:02,539 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:56:02,539 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:56:03,493 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:05,494 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:07,495 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:09,496 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:11,497 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:13,503 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:15,504 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:17,507 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:17,755 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:56:17,755 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:56:19,508 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:21,511 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:23,515 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:25,516 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:26,603 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:56:27,517 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:29,518 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:31,519 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:32,982 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:56:32,982 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:56:33,520 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:35,523 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:37,523 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:39,524 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:41,525 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:43,526 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:45,527 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:47,528 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:48,215 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:56:48,215 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:56:49,529 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:53,531 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:55,532 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:57,533 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:56:59,534 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:01,534 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:03,433 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:57:03,433 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:57:03,535 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:05,536 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:07,537 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:11,539 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:13,540 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:15,542 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:17,543 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:18,650 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:57:18,651 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:57:19,520 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:57:19,544 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:21,544 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:23,545 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:25,546 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:27,547 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:31,555 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:33,556 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:33,873 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:57:33,874 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:57:35,557 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:37,558 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:39,559 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:41,560 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:45,562 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:47,562 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:49,095 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:57:49,095 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:57:49,563 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:51,564 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:53,565 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:55,566 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:57,567 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:57:59,568 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:01,568 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:03,570 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:04,315 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:58:04,315 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:58:05,571 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:07,572 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:09,573 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:11,270 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:58:13,575 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:15,576 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:17,577 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:19,537 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:58:19,537 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:58:19,579 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:21,580 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:23,580 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:25,581 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:27,582 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:29,587 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:31,588 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:33,589 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:34,758 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:58:34,758 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:58:35,590 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:37,591 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:39,592 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:41,592 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:43,593 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:45,594 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:47,595 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:49,300 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:58:49,596 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:49,995 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:58:49,996 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:58:51,597 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:53,598 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:57,601 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:58:59,602 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:01,603 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:03,604 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:05,210 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:59:05,210 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:59:05,605 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:07,606 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:11,611 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:13,615 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:15,616 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:17,617 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:19,618 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:20,437 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:59:20,438 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:59:21,619 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:23,623 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:25,624 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:27,625 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:31,626 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:33,627 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:35,628 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:35,656 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:59:35,656 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:59:37,630 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:39,630 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:39,888 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 15:59:41,631 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:45,633 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:47,634 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:49,635 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:50,884 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 15:59:50,884 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 15:59:51,636 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:53,643 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:55,644 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:57,645 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 15:59:59,646 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:01,646 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:03,647 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:05,648 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:06,104 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:00:06,104 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:00:07,652 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:09,653 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:13,656 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:15,657 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:17,658 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:19,659 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:21,320 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:00:21,320 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:00:21,660 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:23,661 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:25,662 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:27,663 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:29,664 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:31,665 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:32,788 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 16:00:33,666 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:35,667 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:36,568 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:00:36,569 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:00:37,671 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:41,673 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:43,674 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:45,675 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:47,679 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:49,680 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:51,685 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:51,789 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:00:51,790 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:00:55,687 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:57,688 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:00:59,689 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:01,690 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:03,691 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:05,692 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:07,011 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:01:07,011 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:01:07,698 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:09,698 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:11,700 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:13,700 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:15,702 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:17,703 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:19,704 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:21,705 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:22,234 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:01:22,234 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:01:22,717 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 16:01:23,706 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:25,707 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:27,711 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:31,713 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:33,714 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:35,715 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:37,449 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:01:37,450 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:01:37,717 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:39,718 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:41,719 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:43,720 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:45,720 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:47,721 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:49,722 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:51,723 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:52,682 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:01:52,683 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:01:53,724 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:55,730 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:57,727 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:01:59,729 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:01,730 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:03,731 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:05,732 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:05,967 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 16:02:07,733 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:07,911 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-16 16:02:07,911 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: stop_status
+2022-08-16 16:02:09,734 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:11,737 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:12,563 DEBUG   SenderThread:3759224 [sender.py:send():302] send: files
+2022-08-16 16:02:12,564 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-16 16:02:12,564 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file media/images/test/conf_matrix_0_a78fdb1171ed5180db84.png with policy now
+2022-08-16 16:02:12,567 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,567 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,567 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,568 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,568 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,568 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,568 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,569 DEBUG   SenderThread:3759224 [sender.py:send():302] send: history
+2022-08-16 16:02:12,569 DEBUG   SenderThread:3759224 [sender.py:send():302] send: summary
+2022-08-16 16:02:12,570 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 16:02:12,581 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: partial_history
+2022-08-16 16:02:12,584 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,584 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,584 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,585 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,585 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,585 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,585 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,585 DEBUG   SenderThread:3759224 [sender.py:send():302] send: metric
+2022-08-16 16:02:12,585 DEBUG   SenderThread:3759224 [sender.py:send():302] send: history
+2022-08-16 16:02:12,586 DEBUG   SenderThread:3759224 [sender.py:send():302] send: summary
+2022-08-16 16:02:12,587 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 16:02:12,737 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-summary.json
+2022-08-16 16:02:12,738 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/media/images/test/conf_matrix_0_a78fdb1171ed5180db84.png
+2022-08-16 16:02:12,738 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/media
+2022-08-16 16:02:12,738 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/media/images
+2022-08-16 16:02:12,738 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_created():275] file/dir created: ./wandb/run-20220816_155004-uuoe88m6/files/media/images/test
+2022-08-16 16:02:13,202 DEBUG   SenderThread:3759224 [sender.py:send():302] send: telemetry
+2022-08-16 16:02:13,203 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:13,203 DEBUG   SenderThread:3759224 [sender.py:send():302] send: exit
+2022-08-16 16:02:13,204 INFO    SenderThread:3759224 [sender.py:send_exit():438] handling exit code: 0
+2022-08-16 16:02:13,204 INFO    SenderThread:3759224 [sender.py:send_exit():440] handling runtime: 727
+2022-08-16 16:02:13,205 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 16:02:13,205 INFO    SenderThread:3759224 [sender.py:send_exit():446] send defer
+2022-08-16 16:02:13,206 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:13,206 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:13,207 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-16 16:02:13,207 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:13,207 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-16 16:02:13,207 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 1
+2022-08-16 16:02:13,208 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:13,208 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-16 16:02:13,286 INFO    Thread-17 :3759224 [upload_job.py:push():138] Uploaded file /tmp/tmpmv57sv1bwandb/lc66gk48-media/images/test/conf_matrix_0_a78fdb1171ed5180db84.png
+2022-08-16 16:02:13,743 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-summary.json
+2022-08-16 16:02:14,039 INFO    Thread-18 :3759224 [upload_job.py:push():138] Uploaded file /tmp/tmpmv57sv1bwandb/hvl93qrq-media/images/test/conf_matrix_0_a78fdb1171ed5180db84.png
+2022-08-16 16:02:14,304 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:14,305 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:14,305 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-16 16:02:14,305 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 2
+2022-08-16 16:02:14,305 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:14,305 DEBUG   SenderThread:3759224 [sender.py:send():302] send: stats
+2022-08-16 16:02:14,308 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:14,308 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-16 16:02:14,308 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:14,309 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-16 16:02:14,309 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 3
+2022-08-16 16:02:14,309 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:14,310 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-16 16:02:14,310 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:14,310 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-16 16:02:14,310 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 4
+2022-08-16 16:02:14,311 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:14,311 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-16 16:02:14,311 DEBUG   SenderThread:3759224 [sender.py:send():302] send: summary
+2022-08-16 16:02:14,312 INFO    SenderThread:3759224 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-16 16:02:14,313 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:14,313 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-16 16:02:14,313 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 5
+2022-08-16 16:02:14,313 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:14,313 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-16 16:02:14,314 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:14,314 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-16 16:02:14,412 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:14,551 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 6
+2022-08-16 16:02:14,551 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:14,552 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:14,552 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-16 16:02:14,552 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:14,552 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-16 16:02:14,653 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:14,739 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-summary.json
+2022-08-16 16:02:14,739 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:14,739 INFO    Thread-12 :3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/config.yaml
+2022-08-16 16:02:15,746 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 7
+2022-08-16 16:02:15,747 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:15,748 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:15,748 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-16 16:02:15,748 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:15,749 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-16 16:02:15,749 INFO    SenderThread:3759224 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-16 16:02:15,850 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:16,740 INFO    SenderThread:3759224 [dir_watcher.py:_on_file_modified():292] file/dir modified: ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:16,741 INFO    SenderThread:3759224 [dir_watcher.py:finish():392] scan: ./wandb/run-20220816_155004-uuoe88m6/files
+2022-08-16 16:02:16,741 INFO    SenderThread:3759224 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-metadata.json wandb-metadata.json
+2022-08-16 16:02:16,741 INFO    SenderThread:3759224 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220816_155004-uuoe88m6/files/output.log output.log
+2022-08-16 16:02:16,742 INFO    SenderThread:3759224 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220816_155004-uuoe88m6/files/requirements.txt requirements.txt
+2022-08-16 16:02:16,742 INFO    SenderThread:3759224 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220816_155004-uuoe88m6/files/config.yaml config.yaml
+2022-08-16 16:02:16,754 INFO    SenderThread:3759224 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220816_155004-uuoe88m6/files/wandb-summary.json wandb-summary.json
+2022-08-16 16:02:16,762 INFO    SenderThread:3759224 [dir_watcher.py:finish():406] scan save: ./wandb/run-20220816_155004-uuoe88m6/files/media/images/test/conf_matrix_0_a78fdb1171ed5180db84.png media/images/test/conf_matrix_0_a78fdb1171ed5180db84.png
+2022-08-16 16:02:16,768 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 8
+2022-08-16 16:02:16,768 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:16,770 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:16,770 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-16 16:02:16,771 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:16,771 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-16 16:02:16,771 INFO    SenderThread:3759224 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-16 16:02:16,875 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:16,875 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:16,978 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:16,978 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,081 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:17,081 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,183 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:17,183 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,286 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:17,286 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,389 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:17,389 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,428 INFO    Thread-19 :3759224 [upload_job.py:push():138] Uploaded file ./wandb/run-20220816_155004-uuoe88m6/files/output.log
+2022-08-16 16:02:17,440 INFO    Thread-21 :3759224 [upload_job.py:push():138] Uploaded file ./wandb/run-20220816_155004-uuoe88m6/files/config.yaml
+2022-08-16 16:02:17,443 INFO    Thread-20 :3759224 [upload_job.py:push():138] Uploaded file ./wandb/run-20220816_155004-uuoe88m6/files/requirements.txt
+2022-08-16 16:02:17,457 INFO    Thread-22 :3759224 [upload_job.py:push():138] Uploaded file ./wandb/run-20220816_155004-uuoe88m6/files/wandb-summary.json
+2022-08-16 16:02:17,492 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:17,492 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,595 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:17,595 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:17,658 INFO    Thread-11 :3759224 [sender.py:transition_state():459] send defer: 9
+2022-08-16 16:02:17,659 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:17,659 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-16 16:02:17,659 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:17,659 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-16 16:02:17,697 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:18,328 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 10
+2022-08-16 16:02:18,329 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:18,330 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:18,330 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-16 16:02:18,331 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:18,331 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-16 16:02:18,331 INFO    SenderThread:3759224 [sender.py:transition_state():459] send defer: 11
+2022-08-16 16:02:18,332 DEBUG   SenderThread:3759224 [sender.py:send():302] send: final
+2022-08-16 16:02:18,333 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: defer
+2022-08-16 16:02:18,333 DEBUG   SenderThread:3759224 [sender.py:send():302] send: footer
+2022-08-16 16:02:18,333 INFO    HandlerThread:3759224 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-16 16:02:18,334 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: defer
+2022-08-16 16:02:18,334 INFO    SenderThread:3759224 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-16 16:02:18,432 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-16 16:02:18,432 DEBUG   SenderThread:3759224 [sender.py:send_request():316] send_request: poll_exit
+2022-08-16 16:02:18,433 INFO    SenderThread:3759224 [file_pusher.py:join():176] waiting for file pusher
+2022-08-16 16:02:18,962 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-16 16:02:18,965 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-16 16:02:18,968 DEBUG   HandlerThread:3759224 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-16 16:02:18,968 INFO    HandlerThread:3759224 [handler.py:finish():810] shutting down handler
+2022-08-16 16:02:19,333 INFO    WriterThread:3759224 [datastore.py:close():279] close: ./wandb/run-20220816_155004-uuoe88m6/run-uuoe88m6.wandb
+2022-08-16 16:02:19,860 INFO    SenderThread:3759224 [sender.py:finish():1312] shutting down sender
+2022-08-16 16:02:19,860 INFO    SenderThread:3759224 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-16 16:02:19,860 INFO    SenderThread:3759224 [file_pusher.py:join():176] waiting for file pusher
+2022-08-16 16:02:20,974 INFO    MainThread:3759224 [internal.py:handle_exit():80] Internal process exited

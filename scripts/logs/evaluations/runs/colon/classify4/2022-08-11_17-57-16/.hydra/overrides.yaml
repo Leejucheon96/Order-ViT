@@ -1,0 +1,6 @@
+- model=classify4.yaml
+- logger.wandb.project=colon
+- trainer.devices=[4,5,6,7]
+- datamodule=colon_test2.yaml
+- logger.wandb.tags=[only_classify,test2]
+- ckpt_path=/home/compu/jh/project/colon_compare/scripts/logs/experiments/runs/colon/classify4/2022-08-01_10-11-56/checkpoints/epoch_012.ckpt
